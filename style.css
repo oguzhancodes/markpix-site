@@ -55,13 +55,34 @@ a:hover { text-decoration: underline; }
   letter-spacing: -0.02em;
 }
 .brand:hover { text-decoration: none; opacity: 0.85; }
-.nav { display: flex; gap: 24px; }
+.nav { display: flex; gap: 24px; align-items: center; }
 .nav a {
   color: rgba(255, 255, 255, 0.75);
   font-size: 14px;
   font-weight: 500;
 }
 .nav a:hover { color: #fff; text-decoration: none; }
+
+/* Dil switcher — 2 dilde küçük badge, 25 dilde dropdown'a evrilecek */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 28px;
+  padding: 0 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+.lang-switch:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #fff !important;
+}
 
 /* ===== Hero (landing) ===== */
 .hero {
