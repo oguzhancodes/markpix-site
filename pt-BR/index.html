@@ -3,118 +3,314 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MarkPix — Câmera com carimbo GPS para profissionais</title>
-  <meta name="description" content="MarkPix é o aplicativo iOS profissional que adiciona carimbos de localização GPS, data, endereço e clima às suas fotos. Sem anúncios, sem marcas d'água.">
+  <title>MarkPix — Carimbo de Câmera GPS para Profissionais de Campo</title>
+  <meta name="description" content="O MarkPix é o app de câmera profissional para iOS que carimba localização GPS, endereço, data e hora, mapa e clima nas suas fotos e vídeos. Sem anúncios, sem marca d'água. 11 modelos de carimbo, relatórios em PDF, desenho e notas, registro de presença, compartilhamento via WhatsApp. Em conformidade com GDPR e KVKK.">
   <meta name="theme-color" content="#0F172A">
-  <meta property="og:title" content="MarkPix — Câmera com carimbo GPS para profissionais">
-  <meta property="og:description" content="Localização GPS, data, endereço e clima em cada foto. Sem anúncios, sem marcas d'água.">
+  <meta name="keywords" content="câmera gps, carimbo de localização, marca de tempo na foto, câmera geotag, foto de campo, foto de obra, vistoria de seguro, relatório pdf, registro de presença, câmera com marca d'água">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MarkPix — Carimbo de Câmera GPS para Profissionais de Campo">
+  <meta property="og:description" content="Carimbe localização GPS, endereço, data, mapa e clima em cada foto. Sem anúncios, sem marca d'água. 11 modelos, relatórios em PDF, desenho, presença, compartilhamento via WhatsApp.">
   <meta property="og:url" content="https://getmarkpix.com/pt-BR/">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://getmarkpix.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="stylesheet" href="/style.css">
   <link rel="alternate" hreflang="tr" href="https://getmarkpix.com/">
   <link rel="alternate" hreflang="en" href="https://getmarkpix.com/en/">
-  <link rel="alternate" hreflang="pt-BR" href="https://getmarkpix.com/pt-BR/">
   <link rel="alternate" hreflang="x-default" href="https://getmarkpix.com/en/">
+  <link rel="canonical" href="https://getmarkpix.com/pt-BR/">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta property="og:image" content="https://getmarkpix.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MarkPix",
+    "operatingSystem": "iOS 17.0+",
+    "applicationCategory": "PhotographyApplication",
+    "description": "App de câmera profissional que carimba localização GPS, endereço, data e hora, mapa e clima nas fotos. Sem anúncios, sem marca d'água.",
+    "offers": [
+      { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free" },
+      { "@type": "Offer", "price": "1.99", "priceCurrency": "USD", "name": "Pro Monthly" },
+      { "@type": "Offer", "price": "11.99", "priceCurrency": "USD", "name": "Pro Yearly" },
+      { "@type": "Offer", "price": "29.99", "priceCurrency": "USD", "name": "Lifetime" }
+    ],
+    "publisher": { "@type": "Person", "name": "Oğuzhan Tanrıverdi" }
+  }
+  </script>
 </head>
 <body>
 
   <header class="site-header">
     <div class="container">
-      <a href="/pt-BR/" class="brand">MarkPix</a>
+      <a href="/pt-BR/" class="brand">
+        <img src="/press/assets/markpix-app-icon-1024.png" alt="Logo do MarkPix" width="30" height="30">
+        MarkPix
+      </a>
       <nav class="nav">
-        <a href="#features">Recursos</a>
+        <a href="#features" class="hide-sm">Recursos</a>
+        <a href="#screens" class="hide-sm">Telas</a>
         <a href="#pricing">Preços</a>
-        <a href="/pt-BR/privacy">Privacidade</a>
-        <a href="/en/" class="lang-switch" aria-label="Switch to English">EN</a>
+        <a href="/pt-BR/support" class="hide-sm">Suporte</a>
+        <a href="/en/" class="lang-switch" aria-label="English">EN</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
-    <div class="container">
-      <h1>A <span class="accent">câmera com carimbo GPS</span> para o campo</h1>
-      <p class="tagline">Adicione localização, data, endereço e clima a cada foto. Sem anúncios, sem marcas d'água, profissional.</p>
-      <div class="cta-row">
-        <a href="#" class="btn-primary">Baixar na App Store</a>
-        <a href="#features" class="btn-secondary">Ver recursos</a>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="eyebrow">Para profissionais de campo · iOS</span>
+        <h1>Carimbe <span class="accent">GPS, endereço e hora</span> em cada foto</h1>
+        <p class="tagline">O MarkPix grava localização, endereço, data e hora, um minimapa e o clima nas suas fotos e vídeos. Sem anúncios, sem marca d'água, profissional. Registros que você pode entregar a um cliente sem constrangimento.</p>
+        <ul class="hero-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Zero anúncios, zero marca d'água forçada</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Suas fotos ficam no dispositivo — nunca são enviadas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 11 modelos de carimbo, relatórios em PDF, desenho e presença</li>
+        </ul>
+        <div class="cta-row">
+          <!-- ON LAUNCH: update href to the live apps.apple.com link, change label to "Download on the App Store" -->
+          <a href="https://apps.apple.com/app/id6770331545" class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.36 12.78c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.75 2.28-1.6 2.78-.41 6.89 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.39 0 1.78.74 3 .72 1.24-.02 2.02-1.12 2.78-2.23.88-1.28 1.24-2.52 1.26-2.58-.03-.01-2.42-.93-2.44-3.68zM14.13 5.6c.64-.78 1.07-1.85.95-2.93-.92.04-2.04.62-2.7 1.39-.59.68-1.11 1.78-.97 2.83 1.03.08 2.08-.52 2.72-1.29z"/></svg>
+            <span class="store-label"><small>Em breve</small><b>App Store</b></span>
+          </a>
+          <a href="#features" class="btn-secondary">Ver recursos</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img class="hero-shot" src="/pt-BR/screens/1.png" alt="MarkPix — câmera com carimbo GPS, sem anúncios e sem marca d'água" width="300" height="650" loading="eager">
       </div>
     </div>
   </section>
 
+  <div class="trust-strip">
+    <div class="container">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Em conformidade com GDPR e KVKK</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg> Sem anúncios</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Seus dados ficam no dispositivo</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> 29 idiomas</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Profissional, não um brinquedo</span>
+    </div>
+  </div>
+
   <section class="section" id="features">
     <div class="container">
-      <h2>Projetado para profissionais</h2>
-      <p class="subtitle">Construção, seguros, imobiliário, jurídico e serviço técnico de campo — feito para gerar evidência fotográfica confiável.</p>
+      <div class="section-head">
+        <span class="eyebrow-c">Recursos</span>
+        <h2>Tudo que o campo precisa, num só quadro</h2>
+        <p class="subtitle">Construção, seguros, imóveis, jurídico e serviços de campo — feito para gerar a documentação em que você pode confiar.</p>
+      </div>
 
       <div class="feature-grid">
         <div class="feature">
-          <div class="icon">📍</div>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
           <h3>GPS + Endereço</h3>
-          <p>Localização automática, endereço completo via geocodificação reversa. Correção manual disponível.</p>
+          <p>Localização automática e endereço completo via geocodificação reversa. Sobrescrita manual de coordenadas disponível.</p>
         </div>
         <div class="feature">
-          <div class="icon">🕒</div>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
           <h3>Data + Hora</h3>
-          <p>Data e hora local, opção UTC. Formato regional padrão.</p>
+          <p>Data, hora e dia locais com padrões sensatos para a sua região. Adicione UTC se precisar.</p>
         </div>
         <div class="feature">
-          <div class="icon">🌤️</div>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
           <h3>Clima</h3>
-          <p>Temperatura, condição, umidade, vento — condições no momento da captura.</p>
+          <p>Temperatura, condição, umidade e vento — as condições exatas no momento da captura.</p>
         </div>
         <div class="feature">
-          <div class="icon">🗺️</div>
-          <h3>Mini mapa</h3>
-          <p>Mapa de localização incorporado no carimbo. Reforça o valor probatório.</p>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></div>
+          <h3>Minimapa</h3>
+          <p>Um mapa de localização embutido no próprio carimbo. Reforça o valor documental num relance.</p>
         </div>
         <div class="feature">
-          <div class="icon">🚫</div>
-          <h3>Zero anúncios, zero marcas d'água</h3>
-          <p>Nem os usuários gratuitos são meio publicitário. Sua foto é sua — sem marca em cima.</p>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <h3>11 Modelos de Carimbo</h3>
+          <p>Do minimalista ao profissional, 11 modelos prontos. Você escolhe a opacidade, a cor, a posição e os campos.</p>
         </div>
         <div class="feature">
-          <div class="icon">🌍</div>
-          <h3>25 idiomas</h3>
-          <p>Localização completa incluindo RTL para árabe. Hora, data e endereço no seu idioma.</p>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+          <h3>Relatórios em PDF</h3>
+          <p>Transforme as fotos selecionadas em um relatório PDF com título, mapa e tabela de metadados — e compartilhe.</p>
         </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></div>
+          <h3>Desenho e Notas</h3>
+          <p>Adicione setas, caixas, desenho livre e notas de texto sobre a foto. Marque danos e detalhes.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
+          <h3>Carimbo em Vídeo</h3>
+          <p>Não só fotos — grave carimbos de GPS e data ao vivo também nos seus vídeos.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg></div>
+          <h3>Registro de Presença</h3>
+          <p>Entrada/saída marcada com localização. Documente onde e quando sua equipe de campo esteve no local.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+          <h3>Galeria + Visualização em Mapa</h3>
+          <p>Veja cada captura em grade, lista ou no mapa. Filtre por projeto, data e localização.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></div>
+          <h3>WhatsApp e Compartilhamento Rápido</h3>
+          <p>Envie a um cliente com um toque via WhatsApp, e-mail ou a folha de compartilhamento nativa do iOS.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h3>29 Idiomas</h3>
+          <p>Localização completa, incluindo RTL para árabe. Endereço, data e formato de coordenadas seguem a sua região.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="screens">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow-c">Telas</span>
+        <h2>Por dentro do app</h2>
+        <p class="subtitle">Uma interface limpa e profissional. A foto é rainha — o carimbo nunca a domina.</p>
+      </div>
+    </div>
+    <div class="shots">
+      <div class="shot"><img src="/pt-BR/screens/1.png" alt="Foto com carimbo GPS, sem anúncios e sem marca d'água" loading="lazy"></div>
+      <div class="shot"><img src="/pt-BR/screens/2.png" alt="Crie o seu próprio carimbo — detalhe da foto" loading="lazy"></div>
+      <div class="shot"><img src="/pt-BR/screens/3.png" alt="Localização, endereço, data e clima num só quadro" loading="lazy"></div>
+      <div class="shot"><img src="/pt-BR/screens/4.png" alt="11 modelos de carimbo prontos para cada setor" loading="lazy"></div>
+      <div class="shot"><img src="/pt-BR/screens/5.png" alt="Relatório em PDF com um toque" loading="lazy"></div>
+      <div class="shot"><img src="/pt-BR/screens/6.png" alt="Todas as suas capturas em uma só galeria" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow-c">Para quem é</span>
+        <h2>Para todos que trabalham em campo</h2>
+        <p class="subtitle">Profissionais que carimbam localização e hora numa foto para gerar documentação que se sustenta.</p>
+      </div>
+      <div class="audience-grid">
+        <div class="audience"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><line x1="9" y1="9" x2="9" y2="9.01"/><line x1="9" y1="13" x2="9" y2="13.01"/><line x1="9" y1="17" x2="9" y2="17.01"/></svg></div><h3>Construção</h3><p>Progresso, medições, defeitos</p></div>
+        <div class="audience"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Seguros</h3><p>Vistoria de danos, laudos</p></div>
+        <div class="audience"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3>Imóveis</h3><p>Anúncios com localização comprovada</p></div>
+        <div class="audience"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="M8 21h8"/><path d="M5 7l-3 6a3 3 0 0 0 6 0z"/><path d="M19 7l-3 6a3 3 0 0 0 6 0z"/></svg></div><h3>Jurídico</h3><p>Documentação de hora e lugar</p></div>
+        <div class="audience"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3>Serviço de Campo</h3><p>Fibra, manutenção, instalação</p></div>
+        <div class="audience"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div><h3>Pessoal</h3><p>Viagens e memórias</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy-band">
+    <div class="container">
+      <div class="privacy-inner">
+        <div>
+          <h2>Seus dados continuam seus. Ponto.</h2>
+          <p class="lead">Ao contrário dos líderes de mercado, o MarkPix nunca usa suas fotos como veículo de publicidade. Nenhuma das suas imagens, localização ou dados pessoais é enviada aos nossos servidores.</p>
+          <a href="/pt-BR/privacy" class="btn-secondary">Ler a política de privacidade</a>
+        </div>
+        <ul class="privacy-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Sem servidor por design.</b> Fotos e localização são processadas no dispositivo e não vão a lugar nenhum.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Zero anúncios, zero IDFA.</b> Sem identificador de publicidade, sem rastreamento entre apps.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Análises opcionais.</b> Relatórios anônimos de uso e falhas podem ser desativados nos Ajustes.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>GDPR · KVKK · CCPA · LGPD.</b> Apague todos os seus dados com um único toque.</span></li>
+        </ul>
       </div>
     </div>
   </section>
 
   <section class="section alt" id="pricing">
     <div class="container">
-      <h2>Preços honestos</h2>
-      <p class="subtitle">O plano gratuito é realmente útil. Pro agrega valor real. Sem paywall agressivo.</p>
+      <div class="section-head">
+        <span class="eyebrow-c">Preços</span>
+        <h2>Preços honestos</h2>
+        <p class="subtitle">O plano gratuito é realmente útil. O Pro agrega valor real. Sem paywalls agressivos, sem taxas ocultas.</p>
+      </div>
 
       <div class="pricing-grid">
         <div class="plan">
-          <h3>Mensal</h3>
-          <div class="price">$1.99</div>
+          <h3>Gratuito</h3>
+          <div class="price">US$ 0</div>
+          <div class="period">para sempre</div>
+          <p class="note">5 fotos / dia · carimbos básicos</p>
+        </div>
+        <div class="plan">
+          <h3>Pro Mensal</h3>
+          <div class="price">US$ 1,99</div>
           <div class="period">/ mês</div>
           <p class="note">Cancele quando quiser</p>
         </div>
         <div class="plan popular">
-          <span class="badge">MAIS POPULAR</span>
-          <h3>Anual</h3>
-          <div class="price">$11.99</div>
+          <span class="badge">MAIS POPULAR · ECONOMIZE 50%</span>
+          <h3>Pro Anual</h3>
+          <div class="price">US$ 11,99</div>
           <div class="period">/ ano</div>
-          <p class="note">Economize 50% · 2 meses grátis</p>
+          <p class="note">Fotos ilimitadas · todos os recursos Pro</p>
         </div>
         <div class="plan">
           <h3>Vitalício</h3>
-          <div class="price">$29.99</div>
+          <div class="price">US$ 29,99</div>
           <div class="period">pagamento único</div>
           <p class="note">Pague uma vez, use para sempre</p>
         </div>
       </div>
-      <p style="text-align:center; margin-top: 24px; font-size: 13px; color: var(--text-tertiary);">Preços em USD. Preço local aplicado via App Store.</p>
+      <p class="pricing-foot"><strong>Pro:</strong> Captura ilimitada · carimbo profissional · todos os modelos · relatórios em PDF · carimbo em vídeo · ações em lote. Todas as compras são processadas pela App Store, e o preço local se aplica via App Store.</p>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow-c">Perguntas frequentes</span>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Minhas fotos são enviadas para um servidor?</summary>
+          <div class="faq-body">Não. Todas as fotos, vídeos e dados de localização são armazenados apenas no seu dispositivo, no espaço próprio do app. A localização é consultada no Apple Maps para resolução de endereço; o resultado também é processado no dispositivo. Veja a <a href="/pt-BR/privacy">política de privacidade</a>.</div>
+        </details>
+        <details>
+          <summary>É adicionado algum logotipo de marca ou marca d'água à minha foto?</summary>
+          <div class="faq-body">Nunca. Ninguém — nem mesmo os usuários gratuitos — recebe um logotipo "MarkPix", nome de marca ou marca d'água forçada na foto. Também não há nome de marca no nome do arquivo. O carimbo é feito apenas com as informações que você escolhe.</div>
+        </details>
+        <details>
+          <summary>O que está incluído no plano gratuito?</summary>
+          <div class="faq-body">5 fotos por dia e os modos de carimbo básicos — para sempre, sem anúncios. Migrar para o Pro remove o limite diário e libera o carimbo profissional, todos os modelos, relatórios em PDF e carimbo em vídeo.</div>
+        </details>
+        <details>
+          <summary>A localização e a hora carimbadas têm validade em juízo?</summary>
+          <div class="faq-body">O carimbo do MarkPix é para registro e informação pessoal; as leituras de GPS variam conforme o dispositivo e as condições. Para uso jurídico/securitário relevante, busque verificação independente (cartório, perito). Veja os <a href="/pt-BR/terms">Termos</a>, seção 12.</div>
+        </details>
+        <details>
+          <summary>Como cancelo uma assinatura?</summary>
+          <div class="faq-body">Pela sua Conta Apple: <strong>Ajustes → toque no seu nome → Assinaturas</strong>. O cancelamento tem efeito ao fim do período atual. Os reembolsos são tratados pela Apple em <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.</div>
+        </details>
+        <details>
+          <summary>Quais dispositivos são compatíveis?</summary>
+          <div class="faq-body">Todo iPhone e iPad com iOS 17.0 ou posterior. Uma versão para Android está no roteiro.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Leve sua câmera com carimbo para o campo</h2>
+      <p>Sem anúncios, sem marca d'água, profissional. A câmera GPS para quem trabalha.</p>
+      <div class="cta-row">
+        <a href="https://apps.apple.com/app/id6770331545" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.36 12.78c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.75 2.28-1.6 2.78-.41 6.89 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.39 0 1.78.74 3 .72 1.24-.02 2.02-1.12 2.78-2.23.88-1.28 1.24-2.52 1.26-2.58-.03-.01-2.42-.93-2.44-3.68zM14.13 5.6c.64-.78 1.07-1.85.95-2.93-.92.04-2.04.62-2.7 1.39-.59.68-1.11 1.78-.97 2.83 1.03.08 2.08-.52 2.72-1.29z"/></svg>
+          <span class="store-label"><small>Em breve</small><b>App Store</b></span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -122,19 +318,29 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="/pt-BR/" class="brand">MarkPix</a>
-          <p>Câmera com carimbo GPS para profissionais de campo.</p>
+          <a href="/pt-BR/" class="brand">
+            <img src="/press/assets/markpix-app-icon-1024.png" alt="MarkPix" width="30" height="30">
+            MarkPix
+          </a>
+          <p>App de carimbo de câmera GPS para profissionais de campo, sem anúncios e sem marca d'água.</p>
         </div>
-        <div class="footer-links">
+        <div class="footer-col">
+          <h4>Produto</h4>
+          <a href="#features">Recursos</a>
+          <a href="#screens">Telas</a>
+          <a href="#pricing">Preços</a>
+          <a href="/pt-BR/support">Suporte (FAQ)</a>
+        </div>
+        <div class="footer-col">
+          <h4>Jurídico</h4>
           <a href="/pt-BR/privacy">Política de Privacidade</a>
           <a href="/pt-BR/terms">Termos de Serviço</a>
-          <a href="mailto:support@getmarkpix.com">Suporte</a>
-          <a href="/en/">EN</a>
-          <a href="/">TR</a>
+          <a href="/press">Kit de Imprensa</a>
+          <a href="mailto:support@getmarkpix.com">Contato</a>
         </div>
       </div>
       <div class="copyright">
-        © 2026 MarkPix · Oğuzhan TANRIVERDİ · support@getmarkpix.com
+        © 2026 MarkPix · Oğuzhan Tanrıverdi · <a href="mailto:support@getmarkpix.com" style="color:rgba(255,255,255,0.6)">support@getmarkpix.com</a>
       </div>
     </div>
   </footer>

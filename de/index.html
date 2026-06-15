@@ -3,118 +3,314 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MarkPix — GPS-Stempelkamera für Profis</title>
-  <meta name="description" content="MarkPix ist die professionelle iOS-App, die GPS-Standort, Datum, Adresse und Wetter auf Ihre Fotos stempelt. Werbefrei, ohne Wasserzeichen.">
+  <title>MarkPix — GPS-Kamerastempel für Profis im Außeneinsatz</title>
+  <meta name="description" content="MarkPix ist die professionelle iOS-Kamera-App, die GPS-Standort, Adresse, Datum/Uhrzeit, Karte und Wetter direkt in Ihre Fotos und Videos stempelt. Keine Werbung, keine Wasserzeichen. 11 Stempelvorlagen, PDF-Berichte, Zeichnen & Notizen, Anwesenheitsprotokoll, WhatsApp-Versand. DSGVO- & KVKK-konform.">
   <meta name="theme-color" content="#0F172A">
-  <meta property="og:title" content="MarkPix — GPS-Stempelkamera für Profis">
-  <meta property="og:description" content="GPS-Standort, Datum, Adresse und Wetter auf jedem Foto. Werbefrei, ohne Wasserzeichen.">
+  <meta name="keywords" content="gps kamera, standortstempel, foto zeitstempel, geotag kamera, baustellenfoto, baudokumentation, schadensgutachten, pdf bericht, anwesenheitsprotokoll, wasserzeichen kamera">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MarkPix — GPS-Kamerastempel für Profis im Außeneinsatz">
+  <meta property="og:description" content="Stempeln Sie GPS-Standort, Adresse, Datum, Karte und Wetter in jedes Foto. Keine Werbung, keine Wasserzeichen. 11 Vorlagen, PDF-Berichte, Zeichnen, Anwesenheit, WhatsApp-Versand.">
   <meta property="og:url" content="https://getmarkpix.com/de/">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://getmarkpix.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="stylesheet" href="/style.css">
   <link rel="alternate" hreflang="tr" href="https://getmarkpix.com/">
   <link rel="alternate" hreflang="en" href="https://getmarkpix.com/en/">
-  <link rel="alternate" hreflang="de" href="https://getmarkpix.com/de/">
   <link rel="alternate" hreflang="x-default" href="https://getmarkpix.com/en/">
+  <link rel="canonical" href="https://getmarkpix.com/de/">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta property="og:image" content="https://getmarkpix.com/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MarkPix",
+    "operatingSystem": "iOS 17.0+",
+    "applicationCategory": "PhotographyApplication",
+    "description": "Professionelle Kamera-App, die GPS-Standort, Adresse, Datum/Uhrzeit, Karte und Wetter in Fotos stempelt. Keine Werbung, keine Wasserzeichen.",
+    "offers": [
+      { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free" },
+      { "@type": "Offer", "price": "1.99", "priceCurrency": "USD", "name": "Pro Monthly" },
+      { "@type": "Offer", "price": "11.99", "priceCurrency": "USD", "name": "Pro Yearly" },
+      { "@type": "Offer", "price": "29.99", "priceCurrency": "USD", "name": "Lifetime" }
+    ],
+    "publisher": { "@type": "Person", "name": "Oğuzhan Tanrıverdi" }
+  }
+  </script>
 </head>
 <body>
 
   <header class="site-header">
     <div class="container">
-      <a href="/de/" class="brand">MarkPix</a>
+      <a href="/de/" class="brand">
+        <img src="/press/assets/markpix-app-icon-1024.png" alt="MarkPix Logo" width="30" height="30">
+        MarkPix
+      </a>
       <nav class="nav">
-        <a href="#features">Funktionen</a>
+        <a href="#features" class="hide-sm">Funktionen</a>
+        <a href="#screens" class="hide-sm">Screenshots</a>
         <a href="#pricing">Preise</a>
-        <a href="/de/privacy">Datenschutz</a>
-        <a href="/en/" class="lang-switch" aria-label="Switch to English">EN</a>
+        <a href="/de/support" class="hide-sm">Support</a>
+        <a href="/en/" class="lang-switch" aria-label="English">EN</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
-    <div class="container">
-      <h1>Die <span class="accent">GPS-Stempelkamera</span> für den Außeneinsatz</h1>
-      <p class="tagline">Fügen Sie jedem Foto Standort, Datum, Adresse und Wetter hinzu. Werbefrei, ohne Wasserzeichen, professionell.</p>
-      <div class="cta-row">
-        <a href="#" class="btn-primary">Im App Store laden</a>
-        <a href="#features" class="btn-secondary">Funktionen ansehen</a>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="eyebrow">Für Profis im Außeneinsatz · iOS</span>
+        <h1>Stempeln Sie <span class="accent">GPS, Adresse &amp; Uhrzeit</span> in jedes Foto</h1>
+        <p class="tagline">MarkPix brennt Standort, Adresse, Datum/Uhrzeit, eine Mini-Karte und das Wetter direkt in Ihre Fotos und Videos. Keine Werbung, keine Wasserzeichen, professionell. Belege, die Sie ohne Scheu an Ihre Kundschaft weitergeben können.</p>
+        <ul class="hero-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Null Werbung, null erzwungene Wasserzeichen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Ihre Fotos bleiben auf dem Gerät — nie hochgeladen</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 11 Stempelvorlagen, PDF-Berichte, Zeichnen &amp; Anwesenheit</li>
+        </ul>
+        <div class="cta-row">
+          <!-- ON LAUNCH: update href to the live apps.apple.com link, change label to "Download on the App Store" -->
+          <a href="https://apps.apple.com/app/id6770331545" class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.36 12.78c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.75 2.28-1.6 2.78-.41 6.89 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.39 0 1.78.74 3 .72 1.24-.02 2.02-1.12 2.78-2.23.88-1.28 1.24-2.52 1.26-2.58-.03-.01-2.42-.93-2.44-3.68zM14.13 5.6c.64-.78 1.07-1.85.95-2.93-.92.04-2.04.62-2.7 1.39-.59.68-1.11 1.78-.97 2.83 1.03.08 2.08-.52 2.72-1.29z"/></svg>
+            <span class="store-label"><small>Demnächst</small><b>App Store</b></span>
+          </a>
+          <a href="#features" class="btn-secondary">Funktionen ansehen</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img class="hero-shot" src="/de/screens/1.png" alt="MarkPix — GPS-gestempelte Kamera, ohne Werbung und ohne Wasserzeichen" width="300" height="650" loading="eager">
       </div>
     </div>
   </section>
 
+  <div class="trust-strip">
+    <div class="container">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> DSGVO- &amp; KVKK-konform</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg> Werbefrei</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Ihre Daten bleiben auf dem Gerät</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> 29 Sprachen</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Professionell, kein Spielzeug</span>
+    </div>
+  </div>
+
   <section class="section" id="features">
     <div class="container">
-      <h2>Für Profis entwickelt</h2>
-      <p class="subtitle">Bau, Versicherung, Immobilien, Recht und technischer Außendienst — entwickelt, um zuverlässige Fotobeweise zu erzeugen.</p>
+      <div class="section-head">
+        <span class="eyebrow-c">Funktionen</span>
+        <h2>Alles, was der Außeneinsatz braucht, in einem Bild</h2>
+        <p class="subtitle">Bau, Versicherung, Immobilien, Recht und Außendienst — entwickelt, um Dokumentationen zu erstellen, auf die Sie sich verlassen können.</p>
+      </div>
 
       <div class="feature-grid">
         <div class="feature">
-          <div class="icon">📍</div>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
           <h3>GPS + Adresse</h3>
-          <p>Automatischer Standort, vollständige Adresse per Reverse-Geocoding. Manuelle Korrektur möglich.</p>
+          <p>Automatischer Standort und vollständige Adresse per Reverse-Geocoding. Manuelle Koordinateneingabe möglich.</p>
         </div>
         <div class="feature">
-          <div class="icon">🕒</div>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
           <h3>Datum + Uhrzeit</h3>
-          <p>Lokales Datum und Zeit, UTC-Option. Standardmäßig regionales Format.</p>
+          <p>Lokales Datum, Uhrzeit und Wochentag mit sinnvollen Voreinstellungen für Ihre Region. UTC bei Bedarf hinzufügbar.</p>
         </div>
         <div class="feature">
-          <div class="icon">🌤️</div>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
           <h3>Wetter</h3>
-          <p>Temperatur, Bedingung, Luftfeuchtigkeit, Wind — die Bedingungen zum Zeitpunkt der Aufnahme.</p>
+          <p>Temperatur, Bedingung, Luftfeuchtigkeit und Wind — die genauen Verhältnisse im Moment der Aufnahme.</p>
         </div>
         <div class="feature">
-          <div class="icon">🗺️</div>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></div>
           <h3>Mini-Karte</h3>
-          <p>Standortkarte in den Stempel integriert. Verstärkt den Beweiswert.</p>
+          <p>Eine Standortkarte direkt im Stempel eingebettet. Stärkt den Belegwert auf einen Blick.</p>
         </div>
         <div class="feature">
-          <div class="icon">🚫</div>
-          <h3>Null Werbung, null Wasserzeichen</h3>
-          <p>Auch Free-Nutzer sind kein Werbemedium. Ihr Foto gehört Ihnen — keine Marke darauf.</p>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <h3>11 Stempelvorlagen</h3>
+          <p>Von minimal bis professionell, 11 fertige Vorlagen. Sie wählen Deckkraft, Farbe, Position und Felder.</p>
         </div>
         <div class="feature">
-          <div class="icon">🌍</div>
-          <h3>25 Sprachen</h3>
-          <p>Vollständige Lokalisierung einschließlich RTL für Arabisch. Zeit, Datum und Adresse in Ihrer Sprache.</p>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+          <h3>PDF-Berichte</h3>
+          <p>Verwandeln Sie ausgewählte Fotos in einen betitelten PDF-Bericht mit Karte und Metadatentabelle — und teilen Sie ihn.</p>
         </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></div>
+          <h3>Zeichnen &amp; Notizen</h3>
+          <p>Fügen Sie Pfeile, Rahmen, Freihandzeichnungen und Textnotizen auf ein Foto hinzu. Markieren Sie Schäden und Details.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
+          <h3>Video-Stempel</h3>
+          <p>Nicht nur Fotos — brennen Sie auch in Ihre Videos einen live aktualisierten GPS- und Datumsstempel.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg></div>
+          <h3>Anwesenheitsprotokoll</h3>
+          <p>Standortgekennzeichnetes Ein- und Ausstempeln. Dokumentieren Sie, wo und wann Ihr Team vor Ort war.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+          <h3>Galerie + Kartenansicht</h3>
+          <p>Sehen Sie jede Aufnahme im Raster, in der Liste oder auf einer Karte. Filtern Sie nach Projekt, Datum und Standort.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></div>
+          <h3>WhatsApp &amp; Schnellversand</h3>
+          <p>Mit einem Tipp an die Kundschaft senden — per WhatsApp, E-Mail oder über das native iOS-Teilen-Menü.</p>
+        </div>
+        <div class="feature">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h3>29 Sprachen</h3>
+          <p>Vollständige Lokalisierung inklusive RTL für Arabisch. Adress-, Datums- und Koordinatenformat passen sich Ihrer Region an.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="screens">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow-c">Screenshots</span>
+        <h2>Ein Blick in die App</h2>
+        <p class="subtitle">Eine klare, professionelle Oberfläche. Das Foto ist König — der Stempel überlagert es nie.</p>
+      </div>
+    </div>
+    <div class="shots">
+      <div class="shot"><img src="/de/screens/1.png" alt="Werbefreies, wasserzeichenfreies GPS-gestempeltes Foto" loading="lazy"></div>
+      <div class="shot"><img src="/de/screens/2.png" alt="Gestalten Sie Ihren eigenen Stempel — Fotodetail" loading="lazy"></div>
+      <div class="shot"><img src="/de/screens/3.png" alt="Standort, Adresse, Datum und Wetter in einem Bild" loading="lazy"></div>
+      <div class="shot"><img src="/de/screens/4.png" alt="11 fertige Stempelvorlagen für jede Branche" loading="lazy"></div>
+      <div class="shot"><img src="/de/screens/5.png" alt="PDF-Bericht mit einem Tipp" loading="lazy"></div>
+      <div class="shot"><img src="/de/screens/6.png" alt="Alle Ihre Aufnahmen in einer Galerie" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow-c">Für wen</span>
+        <h2>Für alle, die im Außeneinsatz arbeiten</h2>
+        <p class="subtitle">Profis, die Standort und Uhrzeit in ein Foto stempeln, um belastbare Dokumentationen zu erstellen.</p>
+      </div>
+      <div class="audience-grid">
+        <div class="audience"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><line x1="9" y1="9" x2="9" y2="9.01"/><line x1="9" y1="13" x2="9" y2="13.01"/><line x1="9" y1="17" x2="9" y2="17.01"/></svg></div><h3>Bau</h3><p>Baufortschritt, Abrechnung, Mängel</p></div>
+        <div class="audience"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Versicherung</h3><p>Schadensgutachten, Berichte</p></div>
+        <div class="audience"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3>Immobilien</h3><p>Standortgeprüfte Exposés</p></div>
+        <div class="audience"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="M8 21h8"/><path d="M5 7l-3 6a3 3 0 0 0 6 0z"/><path d="M19 7l-3 6a3 3 0 0 0 6 0z"/></svg></div><h3>Recht</h3><p>Zeit- & Ortsdokumentation</p></div>
+        <div class="audience"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3>Außendienst</h3><p>Glasfaser, Wartung, Montage</p></div>
+        <div class="audience"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div><h3>Privat</h3><p>Reisen & Erinnerungen</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy-band">
+    <div class="container">
+      <div class="privacy-inner">
+        <div>
+          <h2>Ihre Daten bleiben Ihre. Punkt.</h2>
+          <p class="lead">Anders als die Marktführer nutzt MarkPix Ihre Fotos niemals als Werbefläche. Keines Ihrer Bilder, keine Standort- oder personenbezogenen Daten werden auf unsere Server hochgeladen.</p>
+          <a href="/de/privacy" class="btn-secondary">Datenschutzerklärung lesen</a>
+        </div>
+        <ul class="privacy-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Serverlos by Design.</b> Fotos und Standort werden auf dem Gerät verarbeitet, nirgendwohin gesendet.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Null Werbung, null IDFA.</b> Kein Werbe-Identifier, kein App-übergreifendes Tracking.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Optionale Analyse.</b> Anonyme Nutzungs- und Absturzberichte lassen sich in den Einstellungen abschalten.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>DSGVO · KVKK · CCPA · LGPD.</b> Löschen Sie alle Ihre Daten mit einem einzigen Tipp.</span></li>
+        </ul>
       </div>
     </div>
   </section>
 
   <section class="section alt" id="pricing">
     <div class="container">
-      <h2>Faire Preisgestaltung</h2>
-      <p class="subtitle">Die Free-Stufe ist wirklich nützlich. Pro bringt echten Mehrwert. Keine aggressiven Paywalls.</p>
+      <div class="section-head">
+        <span class="eyebrow-c">Preise</span>
+        <h2>Ehrliche Preise</h2>
+        <p class="subtitle">Die kostenlose Version ist wirklich nützlich. Pro bringt echten Mehrwert. Keine aggressiven Paywalls, keine versteckten Gebühren.</p>
+      </div>
 
       <div class="pricing-grid">
         <div class="plan">
-          <h3>Monatlich</h3>
+          <h3>Free</h3>
+          <div class="price">0 $</div>
+          <div class="period">für immer</div>
+          <p class="note">5 Fotos / Tag · einfache Stempel</p>
+        </div>
+        <div class="plan">
+          <h3>Pro Monatlich</h3>
           <div class="price">1,99 $</div>
           <div class="period">/ Monat</div>
           <p class="note">Jederzeit kündbar</p>
         </div>
         <div class="plan popular">
-          <span class="badge">AM BELIEBTESTEN</span>
-          <h3>Jährlich</h3>
+          <span class="badge">AM BELIEBTESTEN · 50 % SPAREN</span>
+          <h3>Pro Jährlich</h3>
           <div class="price">11,99 $</div>
           <div class="period">/ Jahr</div>
-          <p class="note">50% sparen · 2 Monate gratis</p>
+          <p class="note">Unbegrenzt Fotos · alle Pro-Funktionen</p>
         </div>
         <div class="plan">
-          <h3>Lebenslang</h3>
+          <h3>Lifetime</h3>
           <div class="price">29,99 $</div>
           <div class="period">einmalig</div>
           <p class="note">Einmal zahlen, für immer nutzen</p>
         </div>
       </div>
-      <p style="text-align:center; margin-top: 24px; font-size: 13px; color: var(--text-tertiary);">Preise in USD. Lokaler Preis über App Store.</p>
+      <p class="pricing-foot"><strong>Pro:</strong> Unbegrenzte Aufnahmen · professioneller Stempel · alle Vorlagen · PDF-Berichte · Video-Stempel · Stapelverarbeitung. Alle Käufe werden über den App Store in Ihrer lokalen Währung abgewickelt.</p>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow-c">FAQ</span>
+        <h2>Häufig gestellte Fragen</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Werden meine Fotos auf einen Server hochgeladen?</summary>
+          <div class="faq-body">Nein. Alle Fotos, Videos und Standortdaten werden ausschließlich auf Ihrem Gerät, im eigenen Bereich der App, gespeichert. Der Standort wird zur Adressauflösung an Apple Maps abgefragt; das Ergebnis wird ebenfalls auf dem Gerät verarbeitet. Siehe die <a href="/de/privacy">Datenschutzerklärung</a>.</div>
+        </details>
+        <details>
+          <summary>Wird meinem Foto ein Markenlogo oder Wasserzeichen hinzugefügt?</summary>
+          <div class="faq-body">Niemals. Niemand — auch keine Gratis-Nutzer — erhält ein „MarkPix"-Logo, einen Markennamen oder ein erzwungenes Wasserzeichen auf dem Foto. Auch kein Markenname im Dateinamen. Der Stempel entsteht nur aus den Informationen, die Sie selbst wählen.</div>
+        </details>
+        <details>
+          <summary>Was ist im kostenlosen Tarif enthalten?</summary>
+          <div class="faq-body">5 Fotos pro Tag und die einfachen Stempelmodi — für immer, werbefrei. Das Upgrade auf Pro hebt das Tageslimit auf und schaltet den professionellen Stempel, alle Vorlagen, PDF-Berichte und Video-Stempel frei.</div>
+        </details>
+        <details>
+          <summary>Sind der gestempelte Standort und die Uhrzeit vor Gericht zulässig?</summary>
+          <div class="faq-body">Der MarkPix-Stempel dient der persönlichen Aufzeichnung und Information; GPS-Messungen schwanken je nach Gerät und Bedingungen. Für rechtlich oder versicherungsrechtlich folgenreiche Nutzung holen Sie eine unabhängige Bestätigung ein (Notar, Sachverständiger). Siehe <a href="/de/terms">Nutzungsbedingungen</a>, Abschnitt 12.</div>
+        </details>
+        <details>
+          <summary>Wie kündige ich ein Abonnement?</summary>
+          <div class="faq-body">Über Ihren Apple-Account: <strong>Einstellungen → auf Ihren Namen tippen → Abonnements</strong>. Die Kündigung wird zum Ende des laufenden Zeitraums wirksam. Rückerstattungen werden von Apple unter <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> abgewickelt.</div>
+        </details>
+        <details>
+          <summary>Welche Geräte werden unterstützt?</summary>
+          <div class="faq-body">Jedes iPhone und iPad mit iOS 17.0 oder neuer. Eine Android-Version ist in Planung.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Nehmen Sie Ihre Stempelkamera mit in den Außeneinsatz</h2>
+      <p>Werbefrei, wasserzeichenfrei, professionell. Die GPS-Kamera für Menschen, die arbeiten.</p>
+      <div class="cta-row">
+        <a href="https://apps.apple.com/app/id6770331545" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.36 12.78c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.75 2.28-1.6 2.78-.41 6.89 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.39 0 1.78.74 3 .72 1.24-.02 2.02-1.12 2.78-2.23.88-1.28 1.24-2.52 1.26-2.58-.03-.01-2.42-.93-2.44-3.68zM14.13 5.6c.64-.78 1.07-1.85.95-2.93-.92.04-2.04.62-2.7 1.39-.59.68-1.11 1.78-.97 2.83 1.03.08 2.08-.52 2.72-1.29z"/></svg>
+          <span class="store-label"><small>Demnächst</small><b>App Store</b></span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -122,19 +318,29 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="/de/" class="brand">MarkPix</a>
-          <p>GPS-Stempelkamera für Profis im Außeneinsatz.</p>
+          <a href="/de/" class="brand">
+            <img src="/press/assets/markpix-app-icon-1024.png" alt="MarkPix" width="30" height="30">
+            MarkPix
+          </a>
+          <p>Werbefreie, wasserzeichenfreie GPS-Kamerastempel-App für Profis im Außeneinsatz.</p>
         </div>
-        <div class="footer-links">
+        <div class="footer-col">
+          <h4>Produkt</h4>
+          <a href="#features">Funktionen</a>
+          <a href="#screens">Screenshots</a>
+          <a href="#pricing">Preise</a>
+          <a href="/de/support">Support (FAQ)</a>
+        </div>
+        <div class="footer-col">
+          <h4>Rechtliches</h4>
           <a href="/de/privacy">Datenschutzerklärung</a>
           <a href="/de/terms">Nutzungsbedingungen</a>
-          <a href="mailto:support@getmarkpix.com">Support</a>
-          <a href="/en/">EN</a>
-          <a href="/">TR</a>
+          <a href="/press">Pressekit</a>
+          <a href="mailto:support@getmarkpix.com">Kontakt</a>
         </div>
       </div>
       <div class="copyright">
-        © 2026 MarkPix · Oğuzhan TANRIVERDİ · support@getmarkpix.com
+        © 2026 MarkPix · Oğuzhan Tanrıverdi · <a href="mailto:support@getmarkpix.com" style="color:rgba(255,255,255,0.6)">support@getmarkpix.com</a>
       </div>
     </div>
   </footer>
