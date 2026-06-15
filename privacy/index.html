@@ -10,6 +10,13 @@
   <link rel="alternate" hreflang="tr" href="https://getmarkpix.com/privacy">
   <link rel="alternate" hreflang="en" href="https://getmarkpix.com/en/privacy">
   <link rel="alternate" hreflang="x-default" href="https://getmarkpix.com/en/privacy">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:image" content="https://getmarkpix.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 </head>
 <body>
 
@@ -19,7 +26,7 @@
       <nav class="nav">
         <a href="/">Ana Sayfa</a>
         <a href="/terms">Şartlar</a>
-        <a href="mailto:destek@getmarkpix.com">Destek</a>
+        <a href="mailto:support@getmarkpix.com">Destek</a>
         <a href="/en/privacy" class="lang-switch" aria-label="Switch to English">EN</a>
       </nav>
     </div>
@@ -59,7 +66,7 @@
         <li><strong>Ad-Soyad:</strong> Oğuzhan TANRIVERDİ</li>
         <li><strong>Uygulama:</strong> MarkPix (iOS)</li>
         <li><strong>Web:</strong> <a href="https://getmarkpix.com">getmarkpix.com</a></li>
-        <li><strong>E-posta:</strong> <a href="mailto:destek@getmarkpix.com">destek@getmarkpix.com</a></li>
+        <li><strong>E-posta:</strong> <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a></li>
         <li><strong>Yetki yeri:</strong> İstanbul, Türkiye</li>
       </ul>
       <p>İşleme faaliyetlerimiz GDPR Madde 37'deki zorunluluk eşiğini karşılamadığından atanmış bir Veri Koruma Görevlimiz (DPO) bulunmamaktadır. Tüm gizlilik soruları için yukarıdaki e-posta üzerinden iletişime geçebilirsin.</p>
@@ -85,7 +92,30 @@
         <li><strong>App Store indirme verileri:</strong> Apple App Analytics tarafından anonim olarak toplanan indirme, çökme, kullanım istatistikleri.</li>
       </ul>
 
-      <h3>2.3 Toplamadığımız veriler</h3>
+      <h3>2.3 Firebase üzerinden işlenen anonim veriler</h3>
+      <p>Uygulama, <strong>Google Firebase</strong> servisleri üzerinden iki tür anonim veri toplar. <strong>İkisi de Ayarlar → Veri ve Gizlilik bölümünden ayrı ayrı kapatılabilir.</strong></p>
+
+      <p><strong>Firebase Analytics (Anonim Kullanım İstatistikleri)</strong></p>
+      <ul>
+        <li>Hangi ekranların açıldığı (örn. Kamera, Galeri, Ayarlar)</li>
+        <li>Hangi özelliklerin kullanıldığı (örn. damga şablonu seçimi, PDF rapor üretimi)</li>
+        <li>Seçilen sektör (kişisel/inşaat/sigorta vb. — onboarding'de belirttiğin)</li>
+        <li>Uygulama dili ve birim tercihleri</li>
+        <li>Anonim cihaz kimliği (Firebase Installation ID — Apple ID veya isimle eşleşmez)</li>
+      </ul>
+      <p>Bu veri Apple <strong>App Tracking Transparency (ATT)</strong> prompt'una bağlıdır. "Takip etmesin" derseniz Firebase Analytics tamamen kapanır. Default: opt-in (KVKK madde 5/2 açık rıza). Sonradan Ayarlar'dan istediğin zaman kapatabilirsin.</p>
+
+      <p><strong>Firebase Crashlytics (Anonim Hata Bildirimleri)</strong></p>
+      <ul>
+        <li>Uygulama çöktüğünde otomatik gönderilen <strong>teknik bilgi</strong>: hangi kod satırında crash oldu, stack trace, iOS sürümü, cihaz modeli</li>
+        <li>Crash öncesi son aksiyonlar (foto çekildi, hava durumu API hatası vb.) — kalite teşhisi için</li>
+        <li>Anonim cihaz kimliği (Firebase Installation ID)</li>
+      </ul>
+      <p><strong>Kişisel veri YOKTUR</strong> — fotoğraf, konum, isim, e-posta gönderilmez. Sadece teknik crash bilgisi. KVKK madde 5/2-f "meşru menfaat" kapsamında işlenir (uygulamanın kararlı çalışmasını sağlamak). Default: opt-in. Sonradan Ayarlar'dan kapatabilirsin.</p>
+
+      <p>Detaylı bilgi: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></p>
+
+      <h3>2.4 Toplamadığımız veriler</h3>
       <ul>
         <li>Ad, soyad, e-posta, telefon (uygulama hesap oluşturma istemez).</li>
         <li>Kişiler, takvim, mikrofon (mikrofon yalnızca video kaydında kullanılır, ses dosyaya gömülür, sunucuya gönderilmez).</li>
@@ -126,11 +156,19 @@
       <h3>5.4 Hava Durumu Servisi</h3>
       <p>Hava durumu damgası özelliği etkinleştirildiğinde, konum koordinatların ile hava durumu sağlayıcısına anonim sorgu gönderilir. Hiçbir kişisel tanımlayıcı eklenmez.</p>
 
+      <h3>5.5 Google Firebase (Analytics + Crashlytics)</h3>
+      <p>Uygulama kalitesini ölçmek ve hataları teşhis etmek için <strong>Google LLC</strong>'nin Firebase servislerini kullanırız:</p>
+      <ul>
+        <li><strong>Firebase Analytics:</strong> Ekran görüntülemeleri, özellik kullanımı, sektör tercihi gibi anonim istatistikleri toplar. Apple ATT prompt'una bağlıdır — "Takip etmesin" denilirse otomatik kapanır.</li>
+        <li><strong>Firebase Crashlytics:</strong> Uygulama çökerse anonim teknik crash raporu (stack trace, iOS sürümü, cihaz modeli) gönderir. Kişisel veri içermez.</li>
+      </ul>
+      <p>İki servis de Ayarlar → Veri ve Gizlilik'ten <strong>ayrı ayrı</strong> kapatılabilir. Veri Google sunucularında işlenir; Google'ın gizlilik politikası: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+
       <h2 id="sec-6">6. Veri Saklama Süresi</h2>
       <ul>
         <li><strong>Cihazındaki veriler:</strong> Uygulamayı silene veya verileri uygulama içinden silene kadar saklanır.</li>
         <li><strong>Apple üzerindeki satın alma kayıtları:</strong> Apple'ın saklama politikasına tabidir.</li>
-        <li><strong>Destek e-postaları:</strong> destek@getmarkpix.com adresine gönderdiğin e-postalar talep çözüldükten sonra en geç 2 yıl içinde silinir.</li>
+        <li><strong>Destek e-postaları:</strong> support@getmarkpix.com adresine gönderdiğin e-postalar talep çözüldükten sonra en geç 2 yıl içinde silinir.</li>
       </ul>
 
       <h2 id="sec-7">7. Veri Güvenliği</h2>
@@ -177,10 +215,18 @@
         <li>Rızanın geri çekilmesi</li>
       </ul>
 
-      <p>Bu hakları kullanmak için: verilerinin büyük çoğunluğu cihazında — uygulama içinden <strong>Ayarlar → Veri ve Gizlilik → Tüm verileri sil</strong> ile anında yerel silme yapabilirsin. Diğer talepler için <a href="mailto:destek@getmarkpix.com">destek@getmarkpix.com</a> adresine yaz. Yasal süre içinde yanıtlayacağız (KVKK: 30 gün, GDPR/LGPD: 30 gün, CCPA: 45 gün).</p>
+      <p>Bu hakları kullanmak için: verilerinin büyük çoğunluğu cihazında — uygulama içinden <strong>Ayarlar → Veri ve Gizlilik → Tüm verileri sil</strong> ile anında yerel silme yapabilirsin. Diğer talepler için <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a> adresine yaz. Yasal süre içinde yanıtlayacağız (KVKK: 30 gün, GDPR/LGPD: 30 gün, CCPA: 45 gün).</p>
 
       <h2 id="sec-9">9. Çocukların Gizliliği</h2>
-      <p>MarkPix 13 yaş altındaki çocuklara yönelik tasarlanmamıştır (bazı AB üye devletlerinde 16 yaş altı) ve bilinçli olarak onlardan veri toplamaz. Velisinin onayı olmadan 13 yaş altı bir çocuğun uygulamayı kullandığını fark edersek, ilgili veriler derhal silinir. Lütfen <a href="mailto:destek@getmarkpix.com">destek@getmarkpix.com</a> üzerinden bildir.</p>
+      <p>MarkPix App Store'da <strong>4+ yaş kategorisinde</strong> sunulur. Şiddet, küfür veya yetişkin içerik içermez. Uygulamanın çekirdek işlevi (GPS damgalı fotoğraf) tüm yaşlar için uygundur.</p>
+      <p>Çocuk gizliliği açısından MarkPix'in yapısal bir avantajı vardır: <strong>uygulama hiçbir veriyi sunucularımıza yüklemez</strong>. Tüm fotoğraflar, konum bilgileri ve diğer veriler yalnızca cihazda saklanır. Bu nedenle COPPA (ABD) ve GDPR Madde 8 (AB) kapsamındaki veri toplama yasakları bizim için risk oluşturmaz.</p>
+      <p>Yine de aşağıdaki noktalar önemlidir:</p>
+      <ul>
+        <li><strong>Apple Hesabı yaş kuralları:</strong> App Store satın almaları Apple'ın belirlediği yaş gereksinimlerine tabidir. Apple Aile Paylaşımı kapsamında çocuk hesaplar için satın alma onayı veliye düşer.</li>
+        <li><strong>Veli denetimi:</strong> Çocuğunuzun uygulamayı kullanmasını izliyorsanız, abonelik satın alımlarını "Veli Onayı İste" (Ask to Buy) modunda tutmanızı öneririz.</li>
+        <li><strong>Konum izni:</strong> iOS'ta çocuk hesapları için konum izninin veli onayıyla verilmesi gerekebilir; bu Apple'ın Aile Paylaşımı kontrolüyle yönetilir.</li>
+      </ul>
+      <p>Veri silme talebi veya çocuk gizliliği endişeleri için <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a> adresinden bize ulaşabilirsiniz.</p>
 
       <h2 id="sec-10">10. Yurtdışına Veri Aktarımı</h2>
       <p>Cihazında işlenen veriler yurtdışına gönderilmez. Apple servislerine yapılan sorgu ve satın alma işlemleri, Apple altyapısı kapsamında Avrupa Birliği ve/veya Amerika Birleşik Devletleri sunucularında işlenebilir. Apple, bu aktarımlar için Standart Sözleşme Hükümleri (SCC) ve Avrupa Komisyonu tarafından onaylanmış diğer koruma mekanizmaları sunar.</p>
@@ -195,7 +241,7 @@
         <li><strong>Ayrımcılığa uğramama hakkı</strong> — haklarını kullandığın için ayrımcılığa maruz kalmazsın.</li>
         <li><strong>Hassas kişisel bilgi kullanımını sınırlama hakkı</strong> — hassas kişisel bilgileri talep edilen hizmetin ötesinde kullanmıyoruz.</li>
       </ul>
-      <p>Bu hakları kullanmak için <a href="mailto:destek@getmarkpix.com">destek@getmarkpix.com</a> adresine "CCPA Request" konulu mail at.</p>
+      <p>Bu hakları kullanmak için <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a> adresine "CCPA Request" konulu mail at.</p>
 
       <h2 id="sec-12">12. Politika Değişiklikleri</h2>
       <p>Bu politikayı değişen yasal şartlar veya uygulama özellikleri nedeniyle güncelleyebiliriz. Güncellemeler bu sayfada "Son güncelleme" tarihi ile birlikte yayımlanır. Önemli değişiklikler uygulama içinde veya makul olduğu ölçüde e-posta ile bildirilir.</p>
@@ -203,7 +249,7 @@
       <h2 id="sec-13">13. İletişim</h2>
       <p>Bu politika ve kişisel veri işlemeleri hakkında her türlü soru, talep ve şikâyet için:</p>
       <ul>
-        <li><strong>E-posta:</strong> <a href="mailto:destek@getmarkpix.com">destek@getmarkpix.com</a></li>
+        <li><strong>E-posta:</strong> <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a></li>
         <li><strong>Yetki yeri:</strong> İstanbul Mahkemeleri ve İcra Daireleri</li>
       </ul>
 
@@ -223,12 +269,12 @@
         <div class="footer-links">
           <a href="/privacy">Gizlilik Politikası</a>
           <a href="/terms">Kullanım Şartları</a>
-          <a href="mailto:destek@getmarkpix.com">Destek</a>
+          <a href="mailto:support@getmarkpix.com">Destek</a>
           <a href="/en/privacy">EN</a>
         </div>
       </div>
       <div class="copyright">
-        © 2026 MarkPix · Oğuzhan TANRIVERDİ · destek@getmarkpix.com
+        © 2026 MarkPix · Oğuzhan TANRIVERDİ · support@getmarkpix.com
       </div>
     </div>
   </footer>

@@ -10,6 +10,13 @@
   <link rel="alternate" hreflang="tr" href="https://getmarkpix.com/privacy">
   <link rel="alternate" hreflang="en" href="https://getmarkpix.com/en/privacy">
   <link rel="alternate" hreflang="x-default" href="https://getmarkpix.com/en/privacy">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:image" content="https://getmarkpix.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 </head>
 <body>
 
@@ -19,7 +26,7 @@
       <nav class="nav">
         <a href="/en/">Home</a>
         <a href="/en/terms">Terms</a>
-        <a href="mailto:destek@getmarkpix.com">Support</a>
+        <a href="mailto:support@getmarkpix.com">Support</a>
         <a href="/privacy" class="lang-switch" aria-label="Switch to Turkish">TR</a>
       </nav>
     </div>
@@ -59,7 +66,7 @@
         <li><strong>Name:</strong> Oğuzhan TANRIVERDİ</li>
         <li><strong>App:</strong> MarkPix (iOS)</li>
         <li><strong>Web:</strong> <a href="https://getmarkpix.com">getmarkpix.com</a></li>
-        <li><strong>Email:</strong> <a href="mailto:destek@getmarkpix.com">destek@getmarkpix.com</a></li>
+        <li><strong>Email:</strong> <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a></li>
         <li><strong>Jurisdiction:</strong> Istanbul, Türkiye</li>
       </ul>
       <p>We do not have a designated Data Protection Officer (DPO) as our processing activities do not meet the GDPR Article 37 mandatory threshold. For all privacy enquiries, please contact us via email above.</p>
@@ -85,7 +92,30 @@
         <li><strong>App Store analytics:</strong> Anonymous installation, crash and usage statistics collected by Apple App Analytics.</li>
       </ul>
 
-      <h3>2.3 Data we do not collect</h3>
+      <h3>2.3 Anonymous data processed via Firebase</h3>
+      <p>The app uses <strong>Google Firebase</strong> services to collect two types of anonymous data. <strong>Both can be turned off independently in Settings → Data &amp; Privacy.</strong></p>
+
+      <p><strong>Firebase Analytics (Anonymous Usage Statistics)</strong></p>
+      <ul>
+        <li>Which screens were viewed (e.g. Camera, Gallery, Settings)</li>
+        <li>Which features were used (e.g. stamp template selection, PDF report generation)</li>
+        <li>Selected field of work (personal/construction/insurance etc. — chosen during onboarding)</li>
+        <li>App language and unit preferences</li>
+        <li>Anonymous device identifier (Firebase Installation ID — not matched with Apple ID or name)</li>
+      </ul>
+      <p>This data is governed by Apple's <strong>App Tracking Transparency (ATT)</strong> prompt. If you choose "Ask App Not to Track", Firebase Analytics is fully disabled. Default: opt-in (GDPR Art. 6(1)(a) consent). You can disable it at any time in Settings.</p>
+
+      <p><strong>Firebase Crashlytics (Anonymous Crash Reports)</strong></p>
+      <ul>
+        <li>When the app crashes, an automatic <strong>technical report</strong> is sent: which line of code crashed, stack trace, iOS version, device model</li>
+        <li>Last actions before the crash (photo captured, weather API error, etc.) — for quality diagnostics</li>
+        <li>Anonymous device identifier (Firebase Installation ID)</li>
+      </ul>
+      <p><strong>No personal data</strong> — photos, location, name, email are never sent. Only technical crash info. Processed under GDPR Art. 6(1)(f) legitimate interest (ensuring app stability). Default: opt-in. You can disable in Settings.</p>
+
+      <p>More info: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></p>
+
+      <h3>2.4 Data we do not collect</h3>
       <ul>
         <li>Name, surname, email, phone (the app does not require account creation).</li>
         <li>Contacts, calendar, microphone (microphone is used only during video recording; audio is embedded in the file and not transmitted).</li>
@@ -126,11 +156,19 @@
       <h3>5.4 Weather Service</h3>
       <p>When the weather stamp feature is enabled, your coordinates are sent to a weather service provider as an anonymous query. No personal identifier is attached.</p>
 
+      <h3>5.5 Google Firebase (Analytics + Crashlytics)</h3>
+      <p>To measure app quality and diagnose errors, we use Firebase services provided by <strong>Google LLC</strong>:</p>
+      <ul>
+        <li><strong>Firebase Analytics:</strong> Collects anonymous statistics such as screen views, feature usage, field of work preference. Bound to Apple ATT — automatically disabled if you choose "Ask App Not to Track".</li>
+        <li><strong>Firebase Crashlytics:</strong> If the app crashes, sends anonymous technical crash report (stack trace, iOS version, device model). Contains no personal data.</li>
+      </ul>
+      <p>Both services can be disabled <strong>independently</strong> in Settings → Data &amp; Privacy. Data is processed on Google servers; Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+
       <h2 id="sec-6">6. Data Retention</h2>
       <ul>
         <li><strong>On-device data:</strong> Stored until you delete the app or remove the data from within the app.</li>
         <li><strong>Apple purchase records:</strong> Subject to Apple's retention policy.</li>
-        <li><strong>Support emails:</strong> Emails sent to destek@getmarkpix.com are deleted within 2 years of issue resolution at the latest.</li>
+        <li><strong>Support emails:</strong> Emails sent to support@getmarkpix.com are deleted within 2 years of issue resolution at the latest.</li>
       </ul>
 
       <h2 id="sec-7">7. Data Security</h2>
@@ -177,10 +215,18 @@
         <li>Revocation of consent</li>
       </ul>
 
-      <p>To exercise these rights: most of your data is on your device — use <strong>Settings → Data & Privacy → Delete all data</strong> in the app for instant local erasure. For other requests, email <a href="mailto:destek@getmarkpix.com">destek@getmarkpix.com</a>. We will respond within the legal time limit (30 days for GDPR/LGPD, 30 days for KVKK, 45 days for CCPA).</p>
+      <p>To exercise these rights: most of your data is on your device — use <strong>Settings → Data & Privacy → Delete all data</strong> in the app for instant local erasure. For other requests, email <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a>. We will respond within the legal time limit (30 days for GDPR/LGPD, 30 days for KVKK, 45 days for CCPA).</p>
 
       <h2 id="sec-9">9. Children's Privacy</h2>
-      <p>MarkPix is not directed at children under 13 (or under 16 in some EU member states) and we do not knowingly collect data from them. If we learn that a child has used the app without verifiable parental consent, the relevant data will be deleted immediately. Please notify us via <a href="mailto:destek@getmarkpix.com">destek@getmarkpix.com</a>.</p>
+      <p>MarkPix is rated <strong>4+</strong> on the App Store. It contains no violence, profanity or adult content. Its core function (GPS-stamped photography) is suitable for all ages.</p>
+      <p>From a child-privacy standpoint, MarkPix has a structural advantage: <strong>the app does not upload any data to our servers</strong>. All photos, location data and other content remain on the device. As a result, the data-collection prohibitions under COPPA (United States) and GDPR Article 8 (EU) do not create risk for us.</p>
+      <p>The following points nonetheless apply:</p>
+      <ul>
+        <li><strong>Apple Account age rules:</strong> App Store purchases are subject to Apple's age requirements. Under Apple Family Sharing, purchases by child accounts require parental approval.</li>
+        <li><strong>Parental supervision:</strong> If you supervise a child's use of the app, we recommend keeping subscription purchases in "Ask to Buy" mode.</li>
+        <li><strong>Location permission:</strong> On iOS, location permission for child accounts may require parental consent; this is managed via Apple's Family Sharing controls.</li>
+      </ul>
+      <p>For data deletion requests or any child-privacy concerns, contact us at <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a>.</p>
 
       <h2 id="sec-10">10. International Data Transfers</h2>
       <p>On-device data is not sent outside your device. Queries to Apple services and purchase transactions may be processed on Apple's infrastructure in the European Union and/or the United States. Apple provides Standard Contractual Clauses (SCC) and other safeguards approved by the European Commission for such transfers.</p>
@@ -195,7 +241,7 @@
         <li><strong>Right to non-discrimination</strong> for exercising your rights.</li>
         <li><strong>Right to limit use of sensitive personal information</strong> — we do not use sensitive personal information beyond what is necessary to provide the requested service.</li>
       </ul>
-      <p>To exercise these rights, email <a href="mailto:destek@getmarkpix.com">destek@getmarkpix.com</a> with the subject "CCPA Request".</p>
+      <p>To exercise these rights, email <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a> with the subject "CCPA Request".</p>
 
       <h2 id="sec-12">12. Policy Changes</h2>
       <p>We may update this policy due to changes in applicable laws or new app features. Updates are published on this page with the updated "Last updated" date. Material changes will be notified in-app or by email where reasonably possible.</p>
@@ -203,7 +249,7 @@
       <h2 id="sec-13">13. Contact</h2>
       <p>For any questions, requests or complaints regarding this policy or our processing of personal data:</p>
       <ul>
-        <li><strong>Email:</strong> <a href="mailto:destek@getmarkpix.com">destek@getmarkpix.com</a></li>
+        <li><strong>Email:</strong> <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a></li>
         <li><strong>Postal jurisdiction:</strong> Istanbul Courts and Enforcement Offices, Türkiye</li>
       </ul>
 
@@ -223,12 +269,12 @@
         <div class="footer-links">
           <a href="/en/privacy">Privacy Policy</a>
           <a href="/en/terms">Terms of Service</a>
-          <a href="mailto:destek@getmarkpix.com">Support</a>
+          <a href="mailto:support@getmarkpix.com">Support</a>
           <a href="/privacy">TR</a>
         </div>
       </div>
       <div class="copyright">
-        © 2026 MarkPix · Oğuzhan TANRIVERDİ · destek@getmarkpix.com
+        © 2026 MarkPix · Oğuzhan TANRIVERDİ · support@getmarkpix.com
       </div>
     </div>
   </footer>

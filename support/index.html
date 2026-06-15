@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destek — MarkPix</title>
+  <meta name="description" content="MarkPix destek sayfası. Sık sorulan sorular, abonelik yönetimi, iletişim ve sürüm notları.">
+  <meta name="theme-color" content="#0F172A">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" hreflang="tr" href="https://getmarkpix.com/support">
+  <link rel="alternate" hreflang="en" href="https://getmarkpix.com/en/support">
+  <link rel="alternate" hreflang="x-default" href="https://getmarkpix.com/en/support">
+  <style>
+    .faq-item { border-bottom: 1px solid var(--border); padding: 16px 0; }
+    .faq-item:last-child { border-bottom: 0; }
+    .faq-item summary {
+      cursor: pointer; font-weight: 600; font-size: 16px;
+      list-style: none; display: flex; align-items: center;
+      justify-content: space-between; gap: 12px;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; font-size: 20px; color: var(--brand-primary); font-weight: 400; transition: transform 0.15s; }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item p, .faq-item ul { margin-top: 12px; color: var(--text-secondary); font-size: 15px; line-height: 1.6; }
+    .faq-item ul { padding-left: 22px; }
+    .faq-item li { margin-bottom: 6px; }
+    .support-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px; margin: 32px 0;
+    }
+    .support-card {
+      background: var(--bg-soft); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 22px;
+    }
+    .support-card .ico {
+      width: 36px; height: 36px; background: var(--brand-primary); color: white;
+      border-radius: 8px; display: flex; align-items: center; justify-content: center;
+      font-size: 18px; margin-bottom: 12px;
+    }
+    .support-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+    .support-card p { font-size: 14px; color: var(--text-secondary); margin-bottom: 12px; }
+    .support-card a { font-weight: 600; font-size: 14px; }
+    .faq-cat { margin: 40px 0 16px; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-tertiary); }
+    .contact-block {
+      background: var(--brand-bg); color: white;
+      border-radius: var(--radius); padding: 32px; margin: 48px 0;
+      text-align: center;
+    }
+    .contact-block h2 { font-size: 22px; margin-bottom: 8px; color: white; }
+    .contact-block p { color: rgba(255,255,255,0.75); font-size: 15px; margin-bottom: 20px; }
+    .contact-block a.btn-primary { background: var(--brand-primary); }
+    .changelog-item {
+      padding: 16px 0; border-bottom: 1px solid var(--border);
+    }
+    .changelog-item:last-child { border-bottom: 0; }
+    .changelog-item .ver-row { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+    .changelog-item .ver { font-weight: 700; font-size: 16px; color: var(--text-primary); }
+    .changelog-item .date { font-size: 13px; color: var(--text-tertiary); }
+    .changelog-item ul { padding-left: 22px; margin-top: 6px; }
+    .changelog-item li { font-size: 14px; color: var(--text-secondary); margin-bottom: 4px; }
+  </style>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:image" content="https://getmarkpix.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="brand">MarkPix</a>
+      <nav class="nav">
+        <a href="/">Ana Sayfa</a>
+        <a href="/privacy">Gizlilik</a>
+        <a href="/terms">Şartlar</a>
+        <a href="/en/support" class="lang-switch" aria-label="Switch to English">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="legal-container">
+      <h1>Destek</h1>
+      <p class="meta">Son güncelleme: 27 Mayıs 2026</p>
+
+      <div class="callout">
+        <strong>Hızlı yardım?</strong> Bu sayfada cevabını bulamadıysan <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a> adresine yaz. 24 saat içinde cevaplıyoruz.
+      </div>
+
+      <div class="support-grid">
+        <div class="support-card">
+          <div class="ico">📧</div>
+          <h3>E-posta Desteği</h3>
+          <p>Sorun, öneri, bildirim — her şey için tek adres.</p>
+          <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a>
+        </div>
+        <div class="support-card">
+          <div class="ico">💳</div>
+          <h3>Abonelik Yönetimi</h3>
+          <p>İptal, geri ödeme talebi, plan değişimi.</p>
+          <a href="#aboneliği-nasıl-iptal-ederim">Bilgi al →</a>
+        </div>
+        <div class="support-card">
+          <div class="ico">🔒</div>
+          <h3>KVKK / GDPR Hakları</h3>
+          <p>Verilerini sil, görüntüle veya taşımayı talep et.</p>
+          <a href="/privacy#sec-8">Detaylar →</a>
+        </div>
+      </div>
+
+      <h2 id="sss">Sık Sorulan Sorular</h2>
+
+      <div class="faq-cat">Başlarken</div>
+
+      <details class="faq-item">
+        <summary>MarkPix tam olarak ne yapar?</summary>
+        <p>MarkPix, çektiğin her fotoğrafa konum (adres + koordinat), tarih-saat ve istersen hava durumu damgası basan profesyonel bir kamera uygulamasıdır. Fotoğraf böylece <strong>"ne zaman ve nerede çekildi"</strong> sorusuna kanıt değerinde cevap verir — saha raporları, sigorta hasar tespiti, inşaat ilerleme kayıtları, hukuki delil için kullanılır.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>İlk kez nasıl başlarım?</summary>
+        <ul>
+          <li>Uygulamayı App Store'dan indir.</li>
+          <li>İlk açılışta kamera ve konum iznini ver.</li>
+          <li>Çalıştığın sektörü seç (şablon önerisi için, atlanabilir).</li>
+          <li>Kamera ekranında çekim butonuna bas — damga otomatik basılır.</li>
+        </ul>
+      </details>
+
+      <details class="faq-item">
+        <summary>Konum izni istemediğimde olur mu?</summary>
+        <p>Konum izni vermeden de fotoğraf çekebilirsin ama damgada konum/adres olmaz. Sadece tarih-saat basılır. MarkPix'in asıl değeri konum damgası olduğu için <strong>"Uygulamayı kullanırken"</strong> seçeneğini öneriyoruz — bu uygulama kapalıyken konuma erişmez.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>İnternet olmadan çalışır mı?</summary>
+        <p>Evet. Fotoğraf çekme, GPS koordinatı alma, damga basma — hepsi çevrimdışı çalışır. Sadece <strong>adres tespiti</strong> (koordinat → "Soma, Manisa" gibi) ve <strong>hava durumu</strong> bilgisi için internet gerekir. İnternet yoksa damga koordinat ve tarihi gösterir, adres alanı boş kalır.</p>
+      </details>
+
+      <div class="faq-cat">Damga ve Özelleştirme</div>
+
+      <details class="faq-item">
+        <summary>Damgayı nasıl özelleştiririm?</summary>
+        <ul>
+          <li><strong>Ayarlar → Damga</strong>: varsayılan mod, opaklık, pozisyon, renk teması.</li>
+          <li><strong>Ayarlar → Damga alanları</strong>: hangi alanların basılacağı (adres, rakım, koordinat, hava, vs.).</li>
+          <li>Kamera ekranındaki <strong>Şablonlar</strong> chip'inden 11 hazır sektörel şablondan birini seç.</li>
+        </ul>
+      </details>
+
+      <details class="faq-item">
+        <summary>"Orijinal fotoğraf" ne demek? Açık tutmalı mıyım?</summary>
+        <p>Evet, varsayılan olarak <strong>açık</strong>. MarkPix damgalı versiyonun yanında damgasız orijinal fotoğrafı da galerine kaydeder. Bu sayede sonradan başka bir uygulamada düzenlemek istersen orijinaline erişebilirsin. Yer kazanmak istersen Ayarlar'dan kapatabilirsin.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Damga konumu yanlış çıkıyor, manuel değiştirebilir miyim?</summary>
+        <p>Evet. Foto detay ekranında <strong>"Konumu düzelt"</strong> seçeneği ile harita üzerinden manuel olarak pin'i taşıyabilirsin. Yeni damga otomatik üretilir. Bu özellik özellikle GPS sinyalinin zayıf olduğu yerlerde (bodrum, kapalı garaj) işe yarar.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Hava durumu nereden geliyor?</summary>
+        <p>Apple WeatherKit servisi üzerinden, çekim anındaki cihaz konumundan canlı sorgulanır. Sıcaklık, koşul, nem, basınç, rüzgar yönü ve hızı dahil — istersen Ayarlar'dan hangi alanın damgada görüneceğini seçebilirsin.</p>
+      </details>
+
+      <div class="faq-cat">Abonelik ve Ücretlendirme</div>
+
+      <details class="faq-item">
+        <summary>Free ile Pro arasındaki fark nedir?</summary>
+        <ul>
+          <li><strong>Free:</strong> Günde 5 fotoğraf, Klasik şablon, temel damga, manuel paylaşım.</li>
+          <li><strong>Pro:</strong> Sınırsız çekim, 11 sektörel şablon, PDF rapor, çizim/anotasyon, video damgası, şirket logosu, tam özelleştirme.</li>
+        </ul>
+      </details>
+
+      <details class="faq-item" id="aboneliği-nasıl-iptal-ederim">
+        <summary>Aboneliği nasıl iptal ederim?</summary>
+        <p>iOS abonelikleri MarkPix tarafından değil <strong>Apple ID</strong> üzerinden yönetilir:</p>
+        <ul>
+          <li>iPhone'da <strong>Ayarlar</strong> → adına dokun → <strong>Abonelikler</strong>.</li>
+          <li>MarkPix'i bul → <strong>Aboneliği İptal Et</strong>.</li>
+          <li>Dönem sonuna kadar Pro özelliklerini kullanmaya devam edersin.</li>
+        </ul>
+        <p>Veya doğrudan şu linke git: <a href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">apps.apple.com/account/subscriptions</a></p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Geri ödeme alabilir miyim?</summary>
+        <p>MarkPix geri ödemeleri <strong>Apple</strong> üzerinden işler. <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> adresinden Apple ID'nle giriş yap, MarkPix satın alımını seç, sebep belirt ve gönder. Apple genellikle 48 saat içinde karar verir. Bu süreçte biz size yardımcı olamayız (Apple'ın politikası).</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Lifetime aboneliğini başka cihazda da kullanabilir miyim?</summary>
+        <p>Evet. Lifetime satın alımı <strong>Apple ID</strong>'ne bağlanır. Aynı Apple ID ile giriş yapılan tüm iPhone/iPad cihazlarda Pro özellikler açık olur. Yeni cihazda MarkPix'i ilk açtığında <strong>Ayarlar → Satın alımları geri yükle</strong> ile aktif et.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Pro almadım ama "Satın alımları geri yükle" diyor — neden?</summary>
+        <p>"Geri yükle" butonu daha önce farklı bir cihazda Pro aldıysan veya yanlışlıkla aboneliğin sıfırlandıysa işe yarar. Hiç Pro satın almadıysan tıklamana gerek yok — direkt Free olarak kullanabilirsin.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>"Aile Paylaşımı" (Family Sharing) destekliyor mu?</summary>
+        <p>Şu an <strong>desteklemiyor</strong> — her abonelik tek Apple ID'ye bağlı. Family Sharing desteği yol haritasında, 2026 sonu hedefliyoruz.</p>
+      </details>
+
+      <div class="faq-cat">PDF Rapor ve Paylaşım</div>
+
+      <details class="faq-item">
+        <summary>PDF rapor nasıl oluştururum?</summary>
+        <ul>
+          <li>Galeri ekranında <strong>"Seç"</strong> butonuna bas, raporu istediğin fotoğrafları işaretle.</li>
+          <li><strong>"Rapor Oluştur"</strong> butonuna bas.</li>
+          <li>Başlık, açıklama, opsiyonel şirket logosu ekle.</li>
+          <li>Şablon seç (Standart / Sigorta / İnşaat / Hukuki — Pro).</li>
+          <li>PDF'i kaydet veya direkt paylaş.</li>
+        </ul>
+      </details>
+
+      <details class="faq-item">
+        <summary>PDF rapor maksimum kaç fotoğraf alabilir?</summary>
+        <p>Teknik bir üst sınır yok ama performans açısından <strong>50 fotoğraflık</strong> raporları test ettik. Daha fazla fotoğraf PDF üretme süresini uzatabilir. Sigorta raporu gibi büyük dosyalar için fotoğrafları sayfalara böl.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Şirket logosunu nasıl eklerim?</summary>
+        <p>Pro üyeyseniz <strong>Ayarlar → Damga → Şirket logosu</strong>'na gir, PNG veya JPG yükle. Logo damgada sol üstte ve PDF rapor kapağında görünür. Şeffaf PNG önerilir (arkapan rengini bozmaz).</p>
+      </details>
+
+      <div class="faq-cat">Veri ve Gizlilik</div>
+
+      <details class="faq-item">
+        <summary>Fotoğraflarım sunucunuza yükleniyor mu?</summary>
+        <p><strong>Hayır.</strong> MarkPix'in sunucusu yoktur. Tüm fotoğrafların ve konum verilerin cihazında SQLite veritabanında saklanır. Sadece adres tespiti için koordinat Apple'a sorulur, hava durumu için Apple WeatherKit kullanılır — fotoğrafın asla dışarı çıkmaz.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Hangi anonim istatistikler toplanıyor?</summary>
+        <p>Firebase Analytics üzerinden hangi ekranın açıldığı, hangi özelliğin kullanıldığı gibi <strong>anonim</strong> kullanım verileri toplanır. Kimlik bilgisi (Apple ID, isim, e-posta) yok. Ayarlar'dan istediğin zaman kapatabilirsin.</p>
+        <p>Detaylı bilgi: <a href="/privacy">Gizlilik Politikası</a></p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Verilerimi nasıl silerim?</summary>
+        <p>MarkPix'i sildiğinde tüm fotoğraflar, konum verileri ve ayarlar cihazından silinir. Bizim sunucumuzda hiçbir veri yok, dolayısıyla "veri silme talebi" göndermene gerek yok. Sadece anonim Firebase istatistiklerini sıfırlamak istersen <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a> adresine cihazın anonim ID'sini gönder.</p>
+      </details>
+
+      <div class="faq-cat">Sorun Giderme</div>
+
+      <details class="faq-item">
+        <summary>GPS sinyali alınmıyor / damga "Konum yok" diyor</summary>
+        <ul>
+          <li>Kapalı alandaysan dışarı çık (GPS sinyali kapalı mekanda zayıftır).</li>
+          <li>iPhone Ayarlar → Gizlilik → Konum Servisleri açık mı kontrol et.</li>
+          <li>Ayarlar → MarkPix → Konum'un "Uygulamayı kullanırken" seçili mi bak.</li>
+          <li>Uçak modunu aç-kapa et, GPS'i sıfırlamak için.</li>
+          <li>iPhone'u yeniden başlat — GPS yongasını sıfırlar.</li>
+        </ul>
+      </details>
+
+      <details class="faq-item">
+        <summary>Adres yanlış — yakındaki başka bir cadde gösteriyor</summary>
+        <p>Apple Haritalar'ın tersine geocoding'inin Türkiye'deki bazı bölgelerde (özellikle kırsal) hassasiyeti düşük olabilir. Foto detay ekranında <strong>"Konumu düzelt"</strong> ile manuel olarak doğru adresi seçebilirsin. Yeni damga otomatik üretilir.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Uygulama çöküyor / donuyor</summary>
+        <ul>
+          <li>iPhone'u kapatıp aç.</li>
+          <li>App Store'dan MarkPix'i güncelle (en son sürüm mü?).</li>
+          <li>Hala çöküyorsa: <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a>'a iPhone modelini, iOS sürümünü, MarkPix sürümünü ve nerede çöktüğünü yaz.</li>
+        </ul>
+      </details>
+
+      <details class="faq-item">
+        <summary>Galeride fotoğraflar görünmüyor</summary>
+        <p>MarkPix kendi galerisini tutuyor, iPhone'un Fotoğraflar uygulamasındaki diğer fotoğrafları göstermez. Sadece MarkPix ile çektiklerini gösterir. Eğer MarkPix ile çektiğin fotoğraflar da yoksa veri kaybı yaşamış olabilirsin — <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a>'a yaz, kurtarmaya çalışalım.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Pil hızlı bitiyor</summary>
+        <p>Kamera + GPS sürekli açık olduğu için MarkPix pil tüketebilir. Uzun süreli saha kullanımında <strong>düşük güç modu</strong> aç, kamerayı sadece çekim için aç-kapa et. Çekim aralarında uygulamayı arka plana al — GPS'i durdurur.</p>
+      </details>
+
+      <h2 id="changelog">Sürüm Notları</h2>
+
+      <div class="changelog-item">
+        <div class="ver-row">
+          <span class="ver">v1.0</span>
+          <span class="date">İlk sürüm — Mayıs 2026</span>
+        </div>
+        <ul>
+          <li>iPhone + iPad desteği (iOS 17.0+)</li>
+          <li>3 damga modu (Minimal, Standart, Profesyonel) + BigTime</li>
+          <li>11 sektörel hazır şablon</li>
+          <li>Galeri (Grid / Liste / Harita görünümü)</li>
+          <li>PDF rapor üretimi</li>
+          <li>Çizim ve anotasyon</li>
+          <li>Damgalı video kaydı</li>
+          <li>Proje yönetimi</li>
+          <li>7 dil desteği (TR, EN, DE, ES, FR, PT-BR, AR)</li>
+          <li>Karanlık mod, Türkçe sistem entegrasyonu</li>
+        </ul>
+      </div>
+
+      <div class="contact-block">
+        <h2>Sorunuz hala cevaplanmadı mı?</h2>
+        <p>Cevabını bulamadığın bir şey varsa bize doğrudan yaz. 24 saat içinde döneriz.</p>
+        <a href="mailto:support@getmarkpix.com" class="btn-primary">support@getmarkpix.com</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand">MarkPix</a>
+          <p>Saha profesyonelleri için GPS kamera damga uygulaması.</p>
+        </div>
+        <div class="footer-links">
+          <a href="/privacy">Gizlilik Politikası</a>
+          <a href="/terms">Kullanım Şartları</a>
+          <a href="/support">Destek</a>
+          <a href="mailto:support@getmarkpix.com">İletişim</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2026 MarkPix · Oğuzhan TANRIVERDİ · support@getmarkpix.com
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

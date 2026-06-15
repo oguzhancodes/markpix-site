@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — MarkPix</title>
+  <meta name="description" content="MarkPix support. Frequently asked questions, subscription management, contact, and release notes.">
+  <meta name="theme-color" content="#0F172A">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" hreflang="tr" href="https://getmarkpix.com/support">
+  <link rel="alternate" hreflang="en" href="https://getmarkpix.com/en/support">
+  <link rel="alternate" hreflang="x-default" href="https://getmarkpix.com/en/support">
+  <style>
+    .faq-item { border-bottom: 1px solid var(--border); padding: 16px 0; }
+    .faq-item:last-child { border-bottom: 0; }
+    .faq-item summary {
+      cursor: pointer; font-weight: 600; font-size: 16px;
+      list-style: none; display: flex; align-items: center;
+      justify-content: space-between; gap: 12px;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; font-size: 20px; color: var(--brand-primary); font-weight: 400; transition: transform 0.15s; }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item p, .faq-item ul { margin-top: 12px; color: var(--text-secondary); font-size: 15px; line-height: 1.6; }
+    .faq-item ul { padding-left: 22px; }
+    .faq-item li { margin-bottom: 6px; }
+    .support-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px; margin: 32px 0;
+    }
+    .support-card {
+      background: var(--bg-soft); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 22px;
+    }
+    .support-card .ico {
+      width: 36px; height: 36px; background: var(--brand-primary); color: white;
+      border-radius: 8px; display: flex; align-items: center; justify-content: center;
+      font-size: 18px; margin-bottom: 12px;
+    }
+    .support-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+    .support-card p { font-size: 14px; color: var(--text-secondary); margin-bottom: 12px; }
+    .support-card a { font-weight: 600; font-size: 14px; }
+    .faq-cat { margin: 40px 0 16px; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-tertiary); }
+    .contact-block {
+      background: var(--brand-bg); color: white;
+      border-radius: var(--radius); padding: 32px; margin: 48px 0;
+      text-align: center;
+    }
+    .contact-block h2 { font-size: 22px; margin-bottom: 8px; color: white; }
+    .contact-block p { color: rgba(255,255,255,0.75); font-size: 15px; margin-bottom: 20px; }
+    .contact-block a.btn-primary { background: var(--brand-primary); }
+    .changelog-item { padding: 16px 0; border-bottom: 1px solid var(--border); }
+    .changelog-item:last-child { border-bottom: 0; }
+    .changelog-item .ver-row { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+    .changelog-item .ver { font-weight: 700; font-size: 16px; color: var(--text-primary); }
+    .changelog-item .date { font-size: 13px; color: var(--text-tertiary); }
+    .changelog-item ul { padding-left: 22px; margin-top: 6px; }
+    .changelog-item li { font-size: 14px; color: var(--text-secondary); margin-bottom: 4px; }
+  </style>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:image" content="https://getmarkpix.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/en/" class="brand">MarkPix</a>
+      <nav class="nav">
+        <a href="/en/">Home</a>
+        <a href="/en/privacy">Privacy</a>
+        <a href="/en/terms">Terms</a>
+        <a href="/support" class="lang-switch" aria-label="Türkçe">TR</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="legal-container">
+      <h1>Support</h1>
+      <p class="meta">Last updated: May 27, 2026</p>
+
+      <div class="callout">
+        <strong>Quick help?</strong> If you can't find an answer here, email <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a>. We reply within 24 hours.
+      </div>
+
+      <div class="support-grid">
+        <div class="support-card">
+          <div class="ico">📧</div>
+          <h3>Email Support</h3>
+          <p>Bugs, suggestions, anything — one address.</p>
+          <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a>
+        </div>
+        <div class="support-card">
+          <div class="ico">💳</div>
+          <h3>Manage Subscription</h3>
+          <p>Cancel, request refund, switch plans.</p>
+          <a href="#how-to-cancel">Learn more →</a>
+        </div>
+        <div class="support-card">
+          <div class="ico">🔒</div>
+          <h3>GDPR / CCPA Rights</h3>
+          <p>Delete, view, or export your data.</p>
+          <a href="/en/privacy#sec-8">Details →</a>
+        </div>
+      </div>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <div class="faq-cat">Getting Started</div>
+
+      <details class="faq-item">
+        <summary>What does MarkPix do exactly?</summary>
+        <p>MarkPix is a professional camera app that stamps location (address + coordinates), date-time, and optionally weather data onto every photo you take. This makes your photos provide evidence-grade answers to <strong>"when and where was this taken?"</strong> — used for field reports, insurance damage assessments, construction progress logs, legal documentation.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I get started?</summary>
+        <ul>
+          <li>Download MarkPix from the App Store.</li>
+          <li>Grant camera and location permission on first launch.</li>
+          <li>Select your field of work (for template suggestions, skippable).</li>
+          <li>Tap the capture button — the stamp is applied automatically.</li>
+        </ul>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I use MarkPix without location permission?</summary>
+        <p>Yes, you can take photos without location permission, but the stamp won't include location/address — only date-time will be printed. Since MarkPix's main value is the location stamp, we recommend granting <strong>"While Using App"</strong> permission. The app never accesses location in the background.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does it work offline?</summary>
+        <p>Yes. Capturing photos, getting GPS coordinates, applying stamps — all work offline. Internet is only needed for <strong>address lookup</strong> (coordinate → "Brooklyn, NY") and <strong>weather data</strong>. Without internet, the stamp shows coordinates and date but the address field stays empty.</p>
+      </details>
+
+      <div class="faq-cat">Stamp and Customization</div>
+
+      <details class="faq-item">
+        <summary>How do I customize the stamp?</summary>
+        <ul>
+          <li><strong>Settings → Stamp</strong>: default mode, opacity, position, color theme.</li>
+          <li><strong>Settings → Stamp fields</strong>: which fields to print (address, altitude, coordinates, weather, etc.).</li>
+          <li>Tap the <strong>Templates</strong> chip on the camera screen to pick one of 11 ready-made industry templates.</li>
+        </ul>
+      </details>
+
+      <details class="faq-item">
+        <summary>What does "Save original" mean? Should I keep it on?</summary>
+        <p>Yes, it's on by default. MarkPix saves the unstamped original alongside the stamped version. This lets you edit the photo later in another app if needed. Turn it off in Settings to save storage space.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>The stamp location is wrong — can I correct it manually?</summary>
+        <p>Yes. On the photo detail screen, tap <strong>"Adjust location"</strong> and drag the pin on the map. A new stamp is generated automatically. This is especially useful where GPS is weak (basements, underground parking).</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Where does the weather data come from?</summary>
+        <p>Live from Apple's WeatherKit service, queried at capture time using your location. Includes temperature, condition, humidity, pressure, wind direction and speed. Choose which fields appear on the stamp in Settings.</p>
+      </details>
+
+      <div class="faq-cat">Subscription and Pricing</div>
+
+      <details class="faq-item">
+        <summary>What's the difference between Free and Pro?</summary>
+        <ul>
+          <li><strong>Free:</strong> 5 photos per day, Classic template, basic stamp, manual share.</li>
+          <li><strong>Pro:</strong> Unlimited captures, 11 industry templates, PDF reports, drawing/annotation, stamped video, company logo, full customization.</li>
+        </ul>
+      </details>
+
+      <details class="faq-item" id="how-to-cancel">
+        <summary>How do I cancel my subscription?</summary>
+        <p>iOS subscriptions are managed by <strong>Apple ID</strong>, not by MarkPix:</p>
+        <ul>
+          <li>On your iPhone: <strong>Settings</strong> → tap your name → <strong>Subscriptions</strong>.</li>
+          <li>Find MarkPix → <strong>Cancel Subscription</strong>.</li>
+          <li>You keep Pro features until the end of the billing period.</li>
+        </ul>
+        <p>Or go directly to: <a href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">apps.apple.com/account/subscriptions</a></p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I get a refund?</summary>
+        <p>MarkPix refunds are processed by <strong>Apple</strong>. Visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>, sign in with your Apple ID, select your MarkPix purchase, state the reason and submit. Apple typically decides within 48 hours. We cannot process refunds directly (Apple policy).</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I use Lifetime on multiple devices?</summary>
+        <p>Yes. The Lifetime purchase is tied to your <strong>Apple ID</strong>. All iPhone/iPad devices signed in with the same Apple ID will have Pro features. On a new device, open MarkPix and tap <strong>Settings → Restore Purchases</strong> to activate.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Why does it say "Restore Purchases" if I haven't bought Pro?</summary>
+        <p>The Restore button is useful if you bought Pro on another device or your subscription was accidentally reset. If you've never bought Pro, you don't need to tap it — just use the Free tier.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does it support Family Sharing?</summary>
+        <p>Not yet — each subscription is tied to a single Apple ID. Family Sharing support is on the roadmap for late 2026.</p>
+      </details>
+
+      <div class="faq-cat">PDF Reports and Sharing</div>
+
+      <details class="faq-item">
+        <summary>How do I create a PDF report?</summary>
+        <ul>
+          <li>In the Gallery, tap <strong>"Select"</strong> and pick the photos for the report.</li>
+          <li>Tap <strong>"Create Report"</strong>.</li>
+          <li>Add a title, description, optional company logo.</li>
+          <li>Choose a template (Standard / Insurance / Construction / Legal — Pro).</li>
+          <li>Save the PDF or share directly.</li>
+        </ul>
+      </details>
+
+      <details class="faq-item">
+        <summary>How many photos can I include in one PDF report?</summary>
+        <p>No technical limit, but we've tested up to <strong>50 photos</strong> reliably. More photos extend PDF generation time. For large reports (e.g., insurance claims), split photos into multiple PDFs.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I add my company logo?</summary>
+        <p>Pro users: go to <strong>Settings → Stamp → Company logo</strong>, upload a PNG or JPG. The logo appears in the top-left of the stamp and on the PDF report cover. Transparent PNG is recommended.</p>
+      </details>
+
+      <div class="faq-cat">Data and Privacy</div>
+
+      <details class="faq-item">
+        <summary>Are my photos uploaded to your servers?</summary>
+        <p><strong>No.</strong> MarkPix has no servers. All your photos and location data are stored on your device in a SQLite database. Only coordinates are sent to Apple for address lookup, and to Apple WeatherKit for weather data — your actual photos never leave the device.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What anonymous statistics are collected?</summary>
+        <p>Firebase Analytics collects <strong>anonymous</strong> usage data (which screen opened, which feature used). No identity info (Apple ID, name, email). You can disable this anytime in Settings.</p>
+        <p>Full details: <a href="/en/privacy">Privacy Policy</a></p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I delete my data?</summary>
+        <p>When you delete MarkPix, all photos, location data, and settings are removed from your device. We have no server, so no "data deletion request" is needed. To reset anonymous Firebase statistics, email <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a> with your device's anonymous ID.</p>
+      </details>
+
+      <div class="faq-cat">Troubleshooting</div>
+
+      <details class="faq-item">
+        <summary>GPS signal not working / stamp says "No location"</summary>
+        <ul>
+          <li>Step outside if you're indoors (GPS is weak inside).</li>
+          <li>Check iPhone Settings → Privacy → Location Services is on.</li>
+          <li>Verify Settings → MarkPix → Location is set to "While Using App".</li>
+          <li>Toggle Airplane Mode on and off to reset GPS.</li>
+          <li>Restart your iPhone — this resets the GPS chip.</li>
+        </ul>
+      </details>
+
+      <details class="faq-item">
+        <summary>Address is wrong — shows a nearby street</summary>
+        <p>Apple Maps' reverse geocoding can be less accurate in rural areas. Use <strong>"Adjust location"</strong> on the photo detail screen to manually select the correct address. A new stamp is generated automatically.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>The app crashes or freezes</summary>
+        <ul>
+          <li>Restart your iPhone.</li>
+          <li>Update MarkPix from the App Store (latest version?).</li>
+          <li>Still crashing? Email <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a> with iPhone model, iOS version, MarkPix version, and where the crash happens.</li>
+        </ul>
+      </details>
+
+      <details class="faq-item">
+        <summary>Photos don't appear in the gallery</summary>
+        <p>MarkPix maintains its own gallery, separate from the iPhone Photos app. It only shows photos taken with MarkPix. If your MarkPix photos are also missing, you may have experienced data loss — email <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a> and we'll try to recover.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Battery drains quickly</summary>
+        <p>Because the camera + GPS stay on, MarkPix can drain battery. For long field sessions, enable <strong>Low Power Mode</strong>, open the camera only when capturing, and send MarkPix to background between shots — this stops GPS.</p>
+      </details>
+
+      <h2 id="changelog">Release Notes</h2>
+
+      <div class="changelog-item">
+        <div class="ver-row">
+          <span class="ver">v1.0</span>
+          <span class="date">Initial release — May 2026</span>
+        </div>
+        <ul>
+          <li>iPhone + iPad support (iOS 17.0+)</li>
+          <li>3 stamp modes (Minimal, Standard, Professional) + BigTime</li>
+          <li>11 industry-specific templates</li>
+          <li>Gallery (Grid / List / Map views)</li>
+          <li>PDF report generation</li>
+          <li>Drawing and annotation</li>
+          <li>Stamped video capture</li>
+          <li>Project management</li>
+          <li>7 languages (TR, EN, DE, ES, FR, PT-BR, AR)</li>
+          <li>Dark mode</li>
+        </ul>
+      </div>
+
+      <div class="contact-block">
+        <h2>Still need help?</h2>
+        <p>Couldn't find what you were looking for? Write to us directly. We reply within 24 hours.</p>
+        <a href="mailto:support@getmarkpix.com" class="btn-primary">support@getmarkpix.com</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/en/" class="brand">MarkPix</a>
+          <p>GPS camera stamp app for field professionals.</p>
+        </div>
+        <div class="footer-links">
+          <a href="/en/privacy">Privacy Policy</a>
+          <a href="/en/terms">Terms of Use</a>
+          <a href="/en/support">Support</a>
+          <a href="mailto:support@getmarkpix.com">Contact</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2026 MarkPix · Oğuzhan TANRIVERDİ · support@getmarkpix.com
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

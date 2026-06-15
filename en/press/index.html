@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Press Kit — MarkPix</title>
+  <meta name="description" content="MarkPix press kit. Logo, app icon, screenshots, company info and direct contact.">
+  <meta name="theme-color" content="#0F172A">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" hreflang="tr" href="https://getmarkpix.com/press">
+  <link rel="alternate" hreflang="en" href="https://getmarkpix.com/en/press">
+  <style>
+    .press-hero { background: linear-gradient(180deg, var(--brand-bg) 0%, var(--brand-bg-soft) 100%); color: white; padding: 60px 0; text-align: center; }
+    .press-hero h1 { font-size: clamp(36px, 5vw, 48px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px; }
+    .press-hero p { color: rgba(255,255,255,0.75); font-size: 18px; max-width: 600px; margin: 0 auto; }
+    .press-section { padding: 56px 0; }
+    .press-section.alt { background: var(--bg-soft); }
+    .press-section h2 { font-size: 26px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.01em; }
+    .press-section h2 + .desc { color: var(--text-secondary); font-size: 15px; margin-bottom: 24px; }
+    .at-a-glance { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-bottom: 32px; }
+    .stat { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; }
+    .stat .label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-tertiary); margin-bottom: 4px; }
+    .stat .value { font-size: 18px; font-weight: 700; color: var(--text-primary); }
+    .quotes { display: grid; gap: 16px; }
+    .quote { background: white; border-left: 4px solid var(--brand-primary); padding: 18px 22px; border-radius: var(--radius-sm); font-size: 15px; line-height: 1.6; color: var(--text-primary); font-style: italic; }
+    .quote .attr { display: block; margin-top: 8px; font-style: normal; color: var(--text-tertiary); font-size: 13px; }
+    .asset-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .asset { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; display: flex; flex-direction: column; }
+    .asset .preview { background: var(--bg-soft); border-radius: var(--radius-sm); aspect-ratio: 1; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .asset .preview img { max-width: 100%; max-height: 100%; }
+    .asset.dark-preview .preview { background: var(--brand-bg); }
+    .asset h3 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+    .asset .meta { font-size: 12px; color: var(--text-tertiary); margin-bottom: 10px; }
+    .asset a.dl { display: inline-block; background: var(--brand-primary); color: white; padding: 7px 14px; border-radius: 6px; font-size: 13px; font-weight: 600; text-align: center; margin-top: auto; }
+    .asset a.dl:hover { background: #ff7a47; text-decoration: none; }
+    .ss-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; }
+    .ss { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 10px; }
+    .ss img { width: 100%; aspect-ratio: 1290/2796; object-fit: cover; border-radius: var(--radius-sm); display: block; }
+    .ss .meta { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; padding: 0 4px; }
+    .ss .num { font-size: 13px; font-weight: 700; color: var(--text-primary); }
+    .ss .dl-link { font-size: 12px; font-weight: 600; color: var(--brand-primary); }
+    .bio-grid { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: start; }
+    .bio-avatar { width: 96px; height: 96px; border-radius: 50%; background: linear-gradient(135deg, var(--brand-primary), #c45728); display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 36px; }
+    .bio h3 { font-size: 18px; font-weight: 700; margin-bottom: 2px; }
+    .bio .title { color: var(--text-tertiary); font-size: 14px; margin-bottom: 12px; }
+    .bio p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 8px; }
+    .boilerplate { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; }
+    .boilerplate h3 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-tertiary); margin-bottom: 10px; }
+    .boilerplate p { font-size: 15px; color: var(--text-primary); line-height: 1.7; margin-bottom: 12px; }
+    .boilerplate p:last-child { margin-bottom: 0; }
+    .contact-card { background: var(--brand-bg); color: white; border-radius: var(--radius); padding: 28px; text-align: center; }
+    .contact-card h2 { color: white; font-size: 22px; margin-bottom: 6px; }
+    .contact-card p { color: rgba(255,255,255,0.75); font-size: 15px; margin-bottom: 18px; }
+    .contact-card .email-btn { display: inline-block; background: var(--brand-primary); color: white; padding: 14px 28px; border-radius: var(--radius); font-weight: 600; }
+  </style>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:image" content="https://getmarkpix.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/en/" class="brand">MarkPix</a>
+      <nav class="nav">
+        <a href="/en/">Home</a>
+        <a href="/en/support">Support</a>
+        <a href="/en/privacy">Privacy</a>
+        <a href="/press" class="lang-switch" aria-label="Türkçe">TR</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="press-hero">
+    <div class="container">
+      <h1>Press Kit</h1>
+      <p>If you're writing about, filming, or reviewing MarkPix, everything you need is here — high-resolution logo, screenshots, company info, and direct contact.</p>
+    </div>
+  </section>
+
+  <section class="press-section">
+    <div class="container">
+      <h2>At a Glance</h2>
+      <p class="desc">Key facts for quick reference.</p>
+      <div class="at-a-glance">
+        <div class="stat"><div class="label">App</div><div class="value">MarkPix</div></div>
+        <div class="stat"><div class="label">Category</div><div class="value">Photo & Video</div></div>
+        <div class="stat"><div class="label">Platform</div><div class="value">iOS 17.0+</div></div>
+        <div class="stat"><div class="label">Launch</div><div class="value">May 2026</div></div>
+        <div class="stat"><div class="label">Pricing</div><div class="value">Free + IAP ($1.99–$29.99)</div></div>
+        <div class="stat"><div class="label">Languages</div><div class="value">7 (TR primary)</div></div>
+        <div class="stat"><div class="label">Developer</div><div class="value">Oğuzhan TANRIVERDİ</div></div>
+        <div class="stat"><div class="label">Based In</div><div class="value">Manisa, Türkiye</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="press-section alt">
+    <div class="container">
+      <h2>One-Liners</h2>
+      <p class="desc">Copy-paste ready, in different tones.</p>
+      <div class="quotes">
+        <div class="quote">
+          "MarkPix is an ad-free professional iOS camera app that stamps photos with GPS location, time, and weather data."
+          <span class="attr">— One-liner (long)</span>
+        </div>
+        <div class="quote">
+          "Ad-free, watermark-free GPS camera for field professionals."
+          <span class="attr">— One-liner (short)</span>
+        </div>
+        <div class="quote">
+          "The anti-thesis to market leader GPS Map Camera's 'vacation + aggressive ads' model — born in Turkish, built for professional field work."
+          <span class="attr">— Market positioning</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="press-section">
+    <div class="container">
+      <h2>Brand Assets</h2>
+      <p class="desc">Designed as SVG vectors — sharp at any size. PNG fallback available.</p>
+      <div class="asset-grid">
+        <div class="asset dark-preview">
+          <div class="preview"><img src="/press/assets/markpix-app-icon-1024.png" alt="MarkPix App Icon"></div>
+          <h3>App Icon</h3>
+          <div class="meta">1024×1024 PNG · App Store size</div>
+          <a href="/press/assets/markpix-app-icon-1024.png" download class="dl">Download PNG</a>
+        </div>
+        <div class="asset dark-preview">
+          <div class="preview"><img src="/press/assets/markpix-logo.svg" alt="MarkPix Logo (vector)"></div>
+          <h3>Logo (Mark Only)</h3>
+          <div class="meta">SVG · vector, infinitely scalable</div>
+          <a href="/press/assets/markpix-logo.svg" download class="dl">Download SVG</a>
+        </div>
+        <div class="asset">
+          <div class="preview"><img src="/press/assets/markpix-wordmark.svg" alt="MarkPix Wordmark"></div>
+          <h3>Wordmark (Logo + Text)</h3>
+          <div class="meta">SVG · for horizontal layouts</div>
+          <a href="/press/assets/markpix-wordmark.svg" download class="dl">Download SVG</a>
+        </div>
+      </div>
+
+      <h3 style="margin-top:24px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--text-tertiary);">Brand colors</h3>
+      <div class="at-a-glance" style="margin-top:12px;">
+        <div class="stat"><div class="label">Brand Primary</div><div class="value" style="display:flex;align-items:center;gap:8px;"><span style="width:18px;height:18px;background:#FF6B35;border-radius:4px;"></span>#FF6B35</div></div>
+        <div class="stat"><div class="label">Brand Background</div><div class="value" style="display:flex;align-items:center;gap:8px;"><span style="width:18px;height:18px;background:#0F172A;border-radius:4px;"></span>#0F172A</div></div>
+        <div class="stat"><div class="label">Stamp Accent</div><div class="value" style="display:flex;align-items:center;gap:8px;"><span style="width:18px;height:18px;background:#FFB800;border-radius:4px;"></span>#FFB800</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="press-section alt">
+    <div class="container">
+      <h2>Screenshots</h2>
+      <p class="desc">Six hero screenshots used in App Store. High-resolution 1290×2796 (iPhone 6.9").</p>
+      <div class="ss-grid">
+        <div class="ss"><img src="/press/screenshots/01-ad-free-watermark-free.png" alt="Ad-free and watermark-free"><div class="meta"><span class="num">1.</span><a href="/press/screenshots/01-ad-free-watermark-free.png" download class="dl-link">Download →</a></div></div>
+        <div class="ss"><img src="/press/screenshots/02-11-templates.png" alt="11 industry templates"><div class="meta"><span class="num">2.</span><a href="/press/screenshots/02-11-templates.png" download class="dl-link">Download →</a></div></div>
+        <div class="ss"><img src="/press/screenshots/03-full-control.png" alt="Full control"><div class="meta"><span class="num">3.</span><a href="/press/screenshots/03-full-control.png" download class="dl-link">Download →</a></div></div>
+        <div class="ss"><img src="/press/screenshots/04-gallery-and-pdf.png" alt="Gallery and PDF reports"><div class="meta"><span class="num">4.</span><a href="/press/screenshots/04-gallery-and-pdf.png" download class="dl-link">Download →</a></div></div>
+        <div class="ss"><img src="/press/screenshots/05-three-plans.png" alt="Three plan options"><div class="meta"><span class="num">5.</span><a href="/press/screenshots/05-three-plans.png" download class="dl-link">Download →</a></div></div>
+        <div class="ss"><img src="/press/screenshots/06-gps-stamped-camera.png" alt="GPS-stamped camera"><div class="meta"><span class="num">6.</span><a href="/press/screenshots/06-gps-stamped-camera.png" download class="dl-link">Download →</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="press-section">
+    <div class="container">
+      <h2>Company Boilerplate</h2>
+      <p class="desc">Pick the length that fits your piece.</p>
+
+      <div class="boilerplate" style="margin-bottom:16px;">
+        <h3>Short (1-2 sentences)</h3>
+        <p>MarkPix is an ad-free, watermark-free iOS GPS camera app for field professionals. By stamping location, time, and weather data onto photos, it turns them into evidence-grade documents for construction, insurance, real estate, legal, and field service work.</p>
+      </div>
+
+      <div class="boilerplate" style="margin-bottom:16px;">
+        <h3>Medium (paragraph)</h3>
+        <p>MarkPix is a professional GPS camera app launched on iOS in 2026, positioned as the "ad-free, watermark-free, Turkish-first" alternative to market leader GPS Map Camera (which has 100M+ downloads). Built for construction contractors, insurance damage assessors, real estate agents, fiber/field technicians, and attorneys — anyone whose photos need to answer "when and where was this taken?" with confidence. It includes 11 industry-specific templates, PDF report generation, drawing and annotation, and stamped video recording. All photos and location data stay on the user's device — there are no company servers, ensuring full GDPR and KVKK compliance.</p>
+      </div>
+
+      <div class="boilerplate">
+        <h3>Long (press release body)</h3>
+        <p>MarkPix is a GPS-stamped camera app for iOS, released in May 2026, focused on the "photo as evidence" needs of field professionals. Existing solutions in this App Store category — most notably GPS Map Camera with 100M+ downloads — fell short for professional use due to aggressive ad strategies, forced watermarks, and lack of Turkish-language support. MarkPix directly addresses these gaps.</p>
+        <p>The app automatically stamps each photo with location (address + GPS coordinates + Plus Code), date-time, and optional weather data (temperature, condition, humidity, pressure, wind). The stamp is fully customizable: opacity, position, color theme, field visibility — all under user control. Eleven industry-specific templates (Construction Record, Damage Assessment, Real Estate Presentation, Field Service, Legal Evidence, Time Tracking, Logistics, Agriculture, Event, Travel, Classic) serve the needs of distinct professional groups.</p>
+        <p>What sets MarkPix apart technically: <strong>all data stays on-device</strong>. The company has no servers; photos are never uploaded to any cloud. This architecture ensures GDPR/KVKK compliance and protects the security of sensitive field imagery (private property, interior damage shots, legal evidence photos).</p>
+        <p>Developer Oğuzhan TANRIVERDİ, a software engineer and ISP operator based in Manisa, Türkiye, designed the product from firsthand field experience: "I was using GPS Map Camera every day in the field, and every time the bad design, aggressive ads, and absence of Turkish frustrated me. MarkPix is my answer to that frustration."</p>
+        <p>MarkPix Free allows 5 photos per day. Three subscription options unlock unlimited use: Monthly $1.99, Yearly $11.99 (50% savings), and Lifetime $29.99. No ads, ever.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="press-section alt">
+    <div class="container">
+      <h2>Developer / Founder</h2>
+      <p class="desc">For interview and photography requests.</p>
+      <div class="bio-grid">
+        <div class="bio-avatar">OT</div>
+        <div class="bio">
+          <h3>Oğuzhan TANRIVERDİ</h3>
+          <div class="title">Founder, Developer · MarkPix</div>
+          <p>Software engineer and ISP operator based in Soma, Manisa, Türkiye. With a background in Python and JavaScript, Oğuzhan started Swift and iOS development through the MarkPix project. He developed MarkPix after observing the inadequacy of GPS-stamping apps used by his fiber technicians in the field.</p>
+          <p><strong>Contact:</strong> <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="press-section">
+    <div class="container">
+      <div class="contact-card">
+        <h2>Press Contact</h2>
+        <p>For interview requests, additional visuals, or product review copies, write directly.</p>
+        <a href="mailto:support@getmarkpix.com" class="email-btn">support@getmarkpix.com</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/en/" class="brand">MarkPix</a>
+          <p>GPS camera stamp app for field professionals.</p>
+        </div>
+        <div class="footer-links">
+          <a href="/en/privacy">Privacy Policy</a>
+          <a href="/en/terms">Terms of Use</a>
+          <a href="/en/support">Support</a>
+          <a href="/en/press">Press Kit</a>
+          <a href="mailto:support@getmarkpix.com">Contact</a>
+        </div>
+      </div>
+      <div class="copyright">© 2026 MarkPix · Oğuzhan TANRIVERDİ · support@getmarkpix.com</div>
+    </div>
+  </footer>
+
+</body>
+</html>

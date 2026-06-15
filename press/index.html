@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basın Kiti — MarkPix</title>
+  <meta name="description" content="MarkPix basın kiti. Logo, app icon, ekran görüntüleri, şirket bilgisi ve iletişim — basın için.">
+  <meta name="theme-color" content="#0F172A">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" hreflang="tr" href="https://getmarkpix.com/press">
+  <link rel="alternate" hreflang="en" href="https://getmarkpix.com/en/press">
+  <style>
+    .press-hero {
+      background: linear-gradient(180deg, var(--brand-bg) 0%, var(--brand-bg-soft) 100%);
+      color: white; padding: 60px 0; text-align: center;
+    }
+    .press-hero h1 { font-size: clamp(36px, 5vw, 48px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px; }
+    .press-hero p { color: rgba(255,255,255,0.75); font-size: 18px; max-width: 600px; margin: 0 auto; }
+    .press-section { padding: 56px 0; }
+    .press-section.alt { background: var(--bg-soft); }
+    .press-section h2 { font-size: 26px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.01em; }
+    .press-section h2 + .desc { color: var(--text-secondary); font-size: 15px; margin-bottom: 24px; }
+    .at-a-glance {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px; margin-bottom: 32px;
+    }
+    .stat {
+      background: white; border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 18px;
+    }
+    .stat .label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-tertiary); margin-bottom: 4px; }
+    .stat .value { font-size: 18px; font-weight: 700; color: var(--text-primary); }
+    .quotes { display: grid; gap: 16px; }
+    .quote {
+      background: white; border-left: 4px solid var(--brand-primary);
+      padding: 18px 22px; border-radius: var(--radius-sm);
+      font-size: 15px; line-height: 1.6; color: var(--text-primary);
+      font-style: italic;
+    }
+    .quote .attr { display: block; margin-top: 8px; font-style: normal; color: var(--text-tertiary); font-size: 13px; }
+    .asset-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .asset {
+      background: white; border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 16px;
+      display: flex; flex-direction: column;
+    }
+    .asset .preview {
+      background: var(--bg-soft); border-radius: var(--radius-sm);
+      aspect-ratio: 1; margin-bottom: 12px;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .asset .preview img { max-width: 100%; max-height: 100%; }
+    .asset.dark-preview .preview { background: var(--brand-bg); }
+    .asset h3 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+    .asset .meta { font-size: 12px; color: var(--text-tertiary); margin-bottom: 10px; }
+    .asset a.dl {
+      display: inline-block; background: var(--brand-primary); color: white;
+      padding: 7px 14px; border-radius: 6px; font-size: 13px; font-weight: 600;
+      text-align: center; margin-top: auto;
+    }
+    .asset a.dl:hover { background: #ff7a47; text-decoration: none; }
+    .ss-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+    }
+    .ss {
+      background: white; border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 10px;
+    }
+    .ss img { width: 100%; aspect-ratio: 1290/2796; object-fit: cover; border-radius: var(--radius-sm); display: block; }
+    .ss .meta { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; padding: 0 4px; }
+    .ss .num { font-size: 13px; font-weight: 700; color: var(--text-primary); }
+    .ss .dl-link { font-size: 12px; font-weight: 600; color: var(--brand-primary); }
+    .bio-grid { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: start; }
+    .bio-avatar {
+      width: 96px; height: 96px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--brand-primary), #c45728);
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-weight: 800; font-size: 36px;
+    }
+    .bio h3 { font-size: 18px; font-weight: 700; margin-bottom: 2px; }
+    .bio .title { color: var(--text-tertiary); font-size: 14px; margin-bottom: 12px; }
+    .bio p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 8px; }
+    .boilerplate {
+      background: white; border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 22px;
+    }
+    .boilerplate h3 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-tertiary); margin-bottom: 10px; }
+    .boilerplate p { font-size: 15px; color: var(--text-primary); line-height: 1.7; margin-bottom: 12px; }
+    .boilerplate.short p:last-child, .boilerplate p:last-child { margin-bottom: 0; }
+    .contact-card {
+      background: var(--brand-bg); color: white;
+      border-radius: var(--radius); padding: 28px; text-align: center;
+    }
+    .contact-card h2 { color: white; font-size: 22px; margin-bottom: 6px; }
+    .contact-card p { color: rgba(255,255,255,0.75); font-size: 15px; margin-bottom: 18px; }
+    .contact-card .email-btn {
+      display: inline-block; background: var(--brand-primary); color: white;
+      padding: 14px 28px; border-radius: var(--radius); font-weight: 600;
+    }
+    .download-all {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--brand-bg); color: white;
+      padding: 14px 24px; border-radius: var(--radius);
+      font-weight: 600; font-size: 15px; margin-top: 16px;
+    }
+    .download-all:hover { background: #1a2440; text-decoration: none; }
+  </style>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:image" content="https://getmarkpix.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="brand">MarkPix</a>
+      <nav class="nav">
+        <a href="/">Ana Sayfa</a>
+        <a href="/support">Destek</a>
+        <a href="/privacy">Gizlilik</a>
+        <a href="/en/press" class="lang-switch" aria-label="Switch to English">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="press-hero">
+    <div class="container">
+      <h1>Basın Kiti</h1>
+      <p>MarkPix hakkında yazı yazıyor, video çekiyor veya inceliyorsanız ihtiyacınız olan her şey burada — yüksek çözünürlüklü logo, ekran görüntüleri, şirket bilgisi ve doğrudan iletişim.</p>
+    </div>
+  </section>
+
+  <section class="press-section">
+    <div class="container">
+      <h2>Tek Bakışta</h2>
+      <p class="desc">Hızlı referans için temel veriler.</p>
+      <div class="at-a-glance">
+        <div class="stat">
+          <div class="label">Uygulama</div>
+          <div class="value">MarkPix</div>
+        </div>
+        <div class="stat">
+          <div class="label">Kategori</div>
+          <div class="value">Photo & Video</div>
+        </div>
+        <div class="stat">
+          <div class="label">Platform</div>
+          <div class="value">iOS 17.0+</div>
+        </div>
+        <div class="stat">
+          <div class="label">Çıkış</div>
+          <div class="value">Mayıs 2026</div>
+        </div>
+        <div class="stat">
+          <div class="label">Fiyat</div>
+          <div class="value">Free + IAP (₺49–₺799)</div>
+        </div>
+        <div class="stat">
+          <div class="label">Dil</div>
+          <div class="value">7 dil (TR ana)</div>
+        </div>
+        <div class="stat">
+          <div class="label">Geliştirici</div>
+          <div class="value">Oğuzhan TANRIVERDİ</div>
+        </div>
+        <div class="stat">
+          <div class="label">Şehir</div>
+          <div class="value">Manisa, Türkiye</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="press-section alt">
+    <div class="container">
+      <h2>Tek Cümle Açıklamalar</h2>
+      <p class="desc">Yazınızın tonuna göre kopya-yapıştır.</p>
+      <div class="quotes">
+        <div class="quote">
+          "MarkPix, fotoğraflarınıza GPS konumu, tarih ve hava durumu damgası basan reklamsız profesyonel iOS kamera uygulamasıdır."
+          <span class="attr">— Tek cümle (uzun)</span>
+        </div>
+        <div class="quote">
+          "Saha profesyonelleri için reklamsız, watermarksız GPS kamera."
+          <span class="attr">— Tek cümle (kısa)</span>
+        </div>
+        <div class="quote">
+          "Pazar lideri GPS Map Camera'nın 'tatil + agresif reklam' modeline anti-thesis: tamamen Türkçe doğmuş, profesyonel saha uygulaması."
+          <span class="attr">— Pazardaki konum</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="press-section">
+    <div class="container">
+      <h2>Marka Varlıkları</h2>
+      <p class="desc">SVG vektörel olarak tasarlandı — her boyutta keskin. PNG fallback de mevcut.</p>
+      <div class="asset-grid">
+        <div class="asset dark-preview">
+          <div class="preview"><img src="/press/assets/markpix-app-icon-1024.png" alt="MarkPix App Icon"></div>
+          <h3>App Icon</h3>
+          <div class="meta">1024×1024 PNG · App Store boyutu</div>
+          <a href="/press/assets/markpix-app-icon-1024.png" download class="dl">İndir PNG</a>
+        </div>
+        <div class="asset dark-preview">
+          <div class="preview"><img src="/press/assets/markpix-logo.svg" alt="MarkPix Logo (vektör)"></div>
+          <h3>Logo (Yalın)</h3>
+          <div class="meta">SVG · vektör, sınırsız büyütülebilir</div>
+          <a href="/press/assets/markpix-logo.svg" download class="dl">İndir SVG</a>
+        </div>
+        <div class="asset">
+          <div class="preview"><img src="/press/assets/markpix-wordmark.svg" alt="MarkPix Wordmark"></div>
+          <h3>Wordmark (Logo + Yazı)</h3>
+          <div class="meta">SVG · yatay kullanım için</div>
+          <a href="/press/assets/markpix-wordmark.svg" download class="dl">İndir SVG</a>
+        </div>
+      </div>
+
+      <h3 style="margin-top:24px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--text-tertiary);">Marka renkleri</h3>
+      <div class="at-a-glance" style="margin-top:12px;">
+        <div class="stat">
+          <div class="label">Brand Primary</div>
+          <div class="value" style="display:flex;align-items:center;gap:8px;"><span style="width:18px;height:18px;background:#FF6B35;border-radius:4px;"></span>#FF6B35</div>
+        </div>
+        <div class="stat">
+          <div class="label">Brand Background</div>
+          <div class="value" style="display:flex;align-items:center;gap:8px;"><span style="width:18px;height:18px;background:#0F172A;border-radius:4px;"></span>#0F172A</div>
+        </div>
+        <div class="stat">
+          <div class="label">Stamp Accent</div>
+          <div class="value" style="display:flex;align-items:center;gap:8px;"><span style="width:18px;height:18px;background:#FFB800;border-radius:4px;"></span>#FFB800</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="press-section alt">
+    <div class="container">
+      <h2>Ekran Görüntüleri</h2>
+      <p class="desc">App Store'da kullanılan 6 ana ekran. 1290×2796 (iPhone 6.9") boyutunda yüksek çözünürlük.</p>
+      <div class="ss-grid">
+        <div class="ss">
+          <img src="/press/screenshots/01-ad-free-watermark-free.png" alt="Reklamsız ve Watermarksız">
+          <div class="meta"><span class="num">1.</span><a href="/press/screenshots/01-ad-free-watermark-free.png" download class="dl-link">İndir →</a></div>
+        </div>
+        <div class="ss">
+          <img src="/press/screenshots/02-11-templates.png" alt="11 Sektörel Şablon">
+          <div class="meta"><span class="num">2.</span><a href="/press/screenshots/02-11-templates.png" download class="dl-link">İndir →</a></div>
+        </div>
+        <div class="ss">
+          <img src="/press/screenshots/03-full-control.png" alt="Tam Kontrol Sende">
+          <div class="meta"><span class="num">3.</span><a href="/press/screenshots/03-full-control.png" download class="dl-link">İndir →</a></div>
+        </div>
+        <div class="ss">
+          <img src="/press/screenshots/04-gallery-and-pdf.png" alt="Galeri ve PDF Rapor">
+          <div class="meta"><span class="num">4.</span><a href="/press/screenshots/04-gallery-and-pdf.png" download class="dl-link">İndir →</a></div>
+        </div>
+        <div class="ss">
+          <img src="/press/screenshots/05-three-plans.png" alt="Üç Plan Seçeneği">
+          <div class="meta"><span class="num">5.</span><a href="/press/screenshots/05-three-plans.png" download class="dl-link">İndir →</a></div>
+        </div>
+        <div class="ss">
+          <img src="/press/screenshots/06-gps-stamped-camera.png" alt="GPS Damgalı Kamera">
+          <div class="meta"><span class="num">6.</span><a href="/press/screenshots/06-gps-stamped-camera.png" download class="dl-link">İndir →</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="press-section">
+    <div class="container">
+      <h2>Şirket Açıklamaları</h2>
+      <p class="desc">Yazınızın uzunluğuna göre seç.</p>
+
+      <div class="boilerplate" style="margin-bottom:16px;">
+        <h3>Kısa (1-2 cümle)</h3>
+        <p>MarkPix, saha profesyonelleri için tasarlanmış reklamsız ve watermarksız bir iOS GPS kamera uygulamasıdır. Fotoğraflarınıza konum, zaman ve hava durumu damgası basarak inşaat, sigorta, emlak, hukuk ve saha servisinde kanıt değerinde belge üretir.</p>
+      </div>
+
+      <div class="boilerplate" style="margin-bottom:16px;">
+        <h3>Orta (paragraf)</h3>
+        <p>MarkPix, pazarın 100 milyondan fazla indirme bulunduran lideri GPS Map Camera'nın aksine "reklamsız, watermarksız, Türkçe birinci sınıf" felsefesiyle 2026'da iOS için piyasaya çıkan profesyonel bir GPS kamera uygulamasıdır. İnşaat müteahhitleri, sigorta eksperleri, emlakçılar, fiber/saha teknisyenleri ve avukatlar — özetle fotoğraflarına "ne zaman, nerede çekildi" sorusuna güvenilir cevap vermesi gereken profesyoneller — için tasarlandı. 11 sektörel hazır şablon, PDF rapor üretimi, çizim ve anotasyon, damgalı video kaydı gibi özelliklerle saha çalışmasını dijitalleştirir. Tüm fotoğraflar ve konum verileri kullanıcının cihazında kalır — şirket sunucusu yoktur, dolayısıyla KVKK ve GDPR ile tam uyumludur.</p>
+      </div>
+
+      <div class="boilerplate">
+        <h3>Uzun (basın bülteni gövdesi)</h3>
+        <p>MarkPix, 2026 Mayıs'ında iOS App Store'da piyasaya çıkan ve saha profesyonellerinin "fotoğraf = kanıt" ihtiyacına odaklanan bir GPS kamera uygulamasıdır. App Store'da bu kategorideki mevcut çözümler — özellikle 100M+ indirmeli GPS Map Camera — agresif reklam stratejileri, zorla basılan watermark'lar ve Türkçe desteği eksikliği nedeniyle profesyonel kullanım için yetersiz kalıyordu. MarkPix bu eksiğe doğrudan karşılık verir.</p>
+        <p>Uygulama, çekilen her fotoğrafa otomatik olarak konum (adres + GPS koordinatı + Plus Code), tarih-saat ve isteğe bağlı hava durumu (sıcaklık, koşul, nem, basınç, rüzgar) damgası basar. Damga şeklendirilebilir: opaklık, pozisyon, renk teması, alanların görünümü — hepsi kullanıcı kontrolünde. 11 sektörel hazır şablon (İnşaat Kaydı, Hasar Tespit, Emlak Sunumu, Saha Servis, Hukuki Delil, Mesai Takibi, Lojistik, Tarım Kaydı, Etkinlik, Seyahat, Klasik) farklı meslek gruplarının ihtiyaçlarını karşılar.</p>
+        <p>MarkPix'i farklı kılan teknik tasarım: <strong>tüm veriler cihazda kalır</strong>. Şirketin sunucusu yoktur, fotoğraflar herhangi bir bulut'a yüklenmez. Bu mimari hem KVKK/GDPR uyumunu garanti eder hem de saha çalışanlarının hassas görsellerinin (özel mülk, hasarlı bina iç çekimleri, hukuki kanıt fotoğrafları) güvenliğini sağlar.</p>
+        <p>Uygulamanın geliştiricisi Manisa merkezli yazılım mühendisi Oğuzhan TANRIVERDİ, hem bir ISP işletmecisi hem de saha tecrübeli teknisyen olarak ürünü ihtiyacı bizzat yaşayarak tasarladı: "Sahada her gün GPS Map Camera kullanıyordum ve her seferinde kötü tasarım, agresif reklam, Türkçe yokluğu beni rahatsız ediyordu. MarkPix bu rahatsızlığın cevabı."</p>
+        <p>MarkPix Free olarak günde 5 fotoğraf çekme hakkı verir. Sınırsız kullanım için üç abonelik seçeneği var: Aylık ₺49, Yıllık ₺299 (%50 tasarruf) ve Lifetime ₺799. Reklam YOK, hiçbir koşulda gösterilmez.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="press-section alt">
+    <div class="container">
+      <h2>Geliştirici / Kurucu</h2>
+      <p class="desc">Röportaj ve fotoğraf talepleri için.</p>
+      <div class="bio-grid">
+        <div class="bio-avatar">OT</div>
+        <div class="bio">
+          <h3>Oğuzhan TANRIVERDİ</h3>
+          <div class="title">Kurucu, Geliştirici · MarkPix</div>
+          <p>Manisa Soma merkezli yazılım mühendisi ve ISP işletmecisi. Python ve JavaScript geçmişi olan Oğuzhan, MarkPix projesi ile Swift ve iOS geliştirmeye başladı. ISP operatörlüğü sırasında fiber teknisyenlerinin sahada kullandığı GPS damga uygulamalarının yetersizliğini gözlemleyerek MarkPix'i geliştirdi.</p>
+          <p><strong>İletişim:</strong> <a href="mailto:support@getmarkpix.com">support@getmarkpix.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="press-section">
+    <div class="container">
+      <div class="contact-card">
+        <h2>Basın İletişim</h2>
+        <p>Röportaj talepleri, ek görsel istekleri, ürün inceleme kopyaları için doğrudan yaz.</p>
+        <a href="mailto:support@getmarkpix.com" class="email-btn">support@getmarkpix.com</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand">MarkPix</a>
+          <p>Saha profesyonelleri için GPS kamera damga uygulaması.</p>
+        </div>
+        <div class="footer-links">
+          <a href="/privacy">Gizlilik Politikası</a>
+          <a href="/terms">Kullanım Şartları</a>
+          <a href="/support">Destek</a>
+          <a href="/press">Basın Kiti</a>
+          <a href="mailto:support@getmarkpix.com">İletişim</a>
+        </div>
+      </div>
+      <div class="copyright">© 2026 MarkPix · Oğuzhan TANRIVERDİ · support@getmarkpix.com</div>
+    </div>
+  </footer>
+
+</body>
+</html>
