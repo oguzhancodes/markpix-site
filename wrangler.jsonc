@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "markpix-site",
+  "account_id": "256f0acd1e70e8c6f5906497ca94bf16",
   "compatibility_date": "2026-05-17",
   "observability": {
     "enabled": true
